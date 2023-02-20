@@ -1,0 +1,48 @@
+body {
+    background-color: #2F2F2B;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #FE6F27;
+}
+
+img {
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.tendencias {
+    text-align: center;
+}
+
+.topsales {
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 29%;
+    padding: 10px;
+    background-color: gray;
+    margin: 1.4em;
+}
+
+.orangeLine {
+    border: 5px solid rgb(213, 138, 18);
+}
+
+footer {
+    background-color: #FE6F27;
+}
