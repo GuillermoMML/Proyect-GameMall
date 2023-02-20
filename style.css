@@ -8,22 +8,24 @@
 
 .topnav-left{
     float: left;
-    width: 32%;
+    width: 33%;
     text-align: left;
 }
 
 .topnav-right button{
+    border: 2px;
 
 }
 .topnav-right{
-    width: 32%;
+    margin: 0;
+    width: 33%;
     text-align: right;
-    vertical-align: middle;
+    vertical-align: center;
 
 }
 .topnav-middle{
     float: center;
-    width: 32%;
+    width: 33%;
     text-align: center;
 
 }
