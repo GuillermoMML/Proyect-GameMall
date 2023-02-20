@@ -1,0 +1,32 @@
+
+.topnav {
+    overflow: hidden;
+    background-color: #201c1c;
+    color:white;
+    display: flex;
+}
+
+.topnav-left{
+    float: left;
+    width: 32%;
+    text-align: left;
+}
+
+.topnav-right button{
+
+}
+.topnav-right{
+    width: 32%;
+    text-align: right;
+    vertical-align: middle;
+
+}
+.topnav-middle{
+    float: center;
+    width: 32%;
+    text-align: center;
+
+}
+
+
+  
