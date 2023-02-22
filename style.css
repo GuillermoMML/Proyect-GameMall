@@ -1,34 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-.topnav {
+@font-face {
+    font-family: 'Concert';
+    src: url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+}
+
+
+nav {
+    background-color: blueviolet;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: #201c1c;
-    color:white;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    font-weight: bold;
+    color: #FE6F27;
+    padding: 1.2em;
+    font-family: 'Concert', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    float: left;
     display: flex;
 }
 
-.topnav-left{
-    float: left;
-    width: 33%;
-    text-align: left;
+.right {
+    float: right;
+    display: flex;
 }
-
-.topnav-right button{
-    border: 2px;
-
-}
-.topnav-right{
-    margin: 0;
-    width: 33%;
-    text-align: right;
-    vertical-align: center;
-
-}
-.topnav-middle{
-    float: center;
-    width: 33%;
-    text-align: center;
-
-}
-
-
-  
