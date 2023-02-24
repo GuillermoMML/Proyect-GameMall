@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-@font-face {
-    font-family: 'Concert';
-    src: url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
 }
-
-
 nav {
     background-color: blueviolet;
 }
@@ -23,12 +21,14 @@ ul {
 li {
     font-weight: bold;
     color: #FE6F27;
-    padding: 1.2em;
-    font-family: 'Concert', sans-serif;
+    font-family: 'Concert One', cursive;
+    margin: 0.5em;
+
 }
 
 .center {
     text-align: center;
+    font-size: 2em;
 }
 
 .left {
@@ -36,7 +36,14 @@ li {
     display: flex;
 }
 
-.right {
+.right li{
+    font-family: 'Concert+One', sans-serif;
+    border: 1px solid #FE6F27;
+    background-color: #FE6F27;
+    color: #333 !important;
+  }
+
+  .right {
     float: right;
     display: flex;
 }
