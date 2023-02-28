@@ -6,24 +6,29 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
-   <nav class="topnav">
-        <ul>
-            <div class="left">
-                <li>Todas las categorias</li>
-                <li><input type="text" placeholder="Search..">
-                </li>
-            </div>
-
-            <li class="center">GAMEMALL</li>
-
-            <div class="right">
-                <li><button>Login</button></li>
-                <li><button>Register</button></li>
-            </div>
-
-        </ul>
-   </nav>
+    <nav>
+        <div class="left-elements">
+          <a href="#">☰ Todas las categorias</a>
+          <form action="./" method="get">
+              <div class="searchbar">
+                  <input type="text" class="searchbar__input" name="q" placeholder="Search">
+                  <button type="submit" class="searchbar__button">
+                      <i class="material-icons">search</i>
+                  </button>
+              </div>
+          </form>
+        </div>
+        <div class="center-element">
+          <h1><a href="#"> GameMall</a></h1>
+        </div>
+        <div class="right-elements">
+            <button>Login</button>
+            <button>Registrarse</button>
+        </div>
+      </nav>
 </body>
 </html>
