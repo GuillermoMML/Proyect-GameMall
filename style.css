@@ -1,0 +1,68 @@
+/*Login css*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2F2F2B;
+    color: white;
+}
+#cabecera{
+    background-color: #2F2F2B;
+    height: 70px;
+    border-bottom: 3px solid #FE6F27;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #2F2F2B;
+    border-radius: 100%;
+    border: 3px solid #FE6F27;
+    color: white;
+}
+.flecha{
+    width: 50px;
+    height: 3px;
+    background-color: #FE6F27;
+   
+}
+#producto{ 
+    display: grid;
+    grid-template-columns:  60% 40%;
+    grid-template-rows: 10% 35% 55%;
+    height: 500px;
+    margin: 15px;
+    gap: 20px;
+}
+.texto{
+    grid-row: 1/2;
+}
+
+#resumen{
+    background-color: #262525;
+    grid-row: 2/3;
+}
+#pagar{
+    background-color: #262525; 
+    grid-row: 2/4;
+}
+#sugerencias{
+    display: grid;
+    margin-top: 40px;
+    padding-top: 40px;
+    gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+.suger{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+
