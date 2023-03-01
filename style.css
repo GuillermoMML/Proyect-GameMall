@@ -1,7 +1,7 @@
 body {
-    background-color: #2F2F2B;
     margin: 0;
     color: white;
+    background-color: #2F2F2B;
 }
 
 h1 {
@@ -13,15 +13,19 @@ img {
     object-fit: cover;
     height: 80vh;
     width: 100%;
-    
 }
 
-.tendencias {
+.tendencias, .topsales {
     text-align: center;
 }
 
-.topsales {
-    text-align: center;
+/* LOGIN PAGE */
+#login-page, #register-page, #contact-page {
+    background: -webkit-gradient(linear, left top, right bottom, from(#414141), to(#000000)) fixed;
+}
+
+#login-page h1, #register-page h1, #contact-page h1 {
+    color: #fdfdfd;
 }
 
 /* Clear floats after the columns */
@@ -44,6 +48,87 @@ img {
     border: 5px solid rgb(213, 138, 18);
 }
 
+.footerList {
+    text-align: center;
+}
+
 footer {
     background-color: #FE6F27;
+}
+
+footer h1 {
+    color: #fdfdfd;
+}
+
+/* REGISTER PAGE */
+.modal-register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* LOGIN PAGE */
+.modal-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+}
+
+.login-buttons {
+    margin-top: 1.2em;
+}
+
+.loginBtn {
+    padding: 1.2em;
+    background-color: #FE6F27;
+    border-radius: 10px;
+}
+
+.registerBtn {
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+/* CONTACT US */
+.modal-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+    resize: vertical;
+    min-height: 5em;
+}
+
+.contact-element {
+    margin-bottom: 1.2em;
+}
+
+.radioButtons {
+    border: 2px solid rgb(89, 88, 88);
+    padding: 2em;
+    width: 93%;
+}
+
+.sendMessage {
+    margin-top: 1.2em;
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: center;
 }
