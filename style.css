@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 body{
+<<<<<<< HEAD
     font-family: 'Concert One', cursive;
+=======
+    margin: 0;
+    padding: 0;
+    background-color: #2F2F2B;
+>>>>>>> 86bc393 (Pagina de buscar)
 }
 nav {
     background-color: #201C1C;
@@ -23,6 +29,7 @@ nav a {
     /* quitar subrayado de los enlaces */
 }
 
+<<<<<<< HEAD
 .right-elements {
     display: flex;
     justify-content: flex-end;
@@ -39,6 +46,23 @@ button{
     margin-right:30px
 }
 .right-elements button {
+=======
+.center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+    display: table;
+    vertical-align: middle;
+
+}
+
+
+.right li{
+    font-family: 'Concert+One', sans-serif;
+    border: 1px solid #FE6F27;
+>>>>>>> 86bc393 (Pagina de buscar)
     background-color: #FE6F27;
     color: #201C1C;
     cursor: pointer;
@@ -46,6 +70,7 @@ button{
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .left-elements {
     display: flex;
     width: 30%;
@@ -116,4 +141,59 @@ button{
 
 .searchbar__button:active {
     box-shadow: inset 0 0 30px rgb(0, 0, 0);
+=======
+button{
+    vertical-align: middle;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+.row{
+    color: red;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.col-1,
+.col-2,
+.col-3{
+    margin: 2em;
+    width: 33.3333333%;
+    float:left;
+    height: 11em;
+}
+
+#navegacion{
+    padding: 50px;
+}
+#navegacion #prev{
+    float: left;
+}
+
+#navegacion #next{
+    float: right;
+}
+
+.col-1 img,
+.col-2 img,
+.col-3 img {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+
+}
+a{
+    text-decoration: none;
+    color: #FE6F27;
+    text-decoration-color: #FE6F27;
+}
+img{
+    height: 90px;
+    width: 33.3333333%;
+    
+>>>>>>> 86bc393 (Pagina de buscar)
 }
