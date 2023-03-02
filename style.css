@@ -15,27 +15,27 @@ img {
     width: 100%;
 }
 
-.tendencias, .topsales {
-    text-align: center;
-}
-
 /* LOGIN PAGE */
 #login-page, #register-page, #contact-page {
     background: -webkit-gradient(linear, left top, right bottom, from(#414141), to(#000000)) fixed;
+    /* TODO:// ADD FIREFOX, EDGE GRADIENTS*/
 }
 
 #login-page h1, #register-page h1, #contact-page h1 {
     color: #fdfdfd;
 }
 
-/* Clear floats after the columns */
+/* INDEX */
+.tendencias, .topsales {
+    text-align: center;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 29%;
@@ -52,6 +52,16 @@ img {
     text-align: center;
 }
 
+.footerList ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.footerList li {
+    display: inline-block;
+}
+
 footer {
     background-color: #FE6F27;
 }
@@ -61,20 +71,8 @@ footer h1 {
 }
 
 /* REGISTER PAGE */
-.modal-register {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* LOGIN PAGE */
-.modal-login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 input[type=text] {
     display: inline-block;
     width: 100%;
@@ -99,13 +97,6 @@ input[type=text] {
 }
 
 /* CONTACT US */
-.modal-contact {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 textarea[type=text] {
     display: inline-block;
     width: 100%;
@@ -131,4 +122,12 @@ textarea[type=text] {
     background-color: #fdfdfd;
     border-radius: 5px;
     text-align: center;
+}
+
+/* GENERAL STYLE*/
+.center-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

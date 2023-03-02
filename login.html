@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>GameMall - Login</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body id="login-page">
+    <head>
+        <title>GameMall - Login</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body id="login-page">
+        <div class="modal-login center-modal">
+            <h1>Iniciar Session</h1>
+            <div class="container">
 
-    <div class="modal-login">
-        <h1>Iniciar Session</h1>
-        <div class="container">
+                <label for="uname"> Email </label>
+                <input type="text" placeholder="Enter Email" name="uname" required>
 
-            <label for="uname"> Email </label>
-            <input type="text" placeholder="Enter Email" name="uname" required>
+                <label for="passwd"> Password </label>
+                <input type="text" placeholder="Enter Password" name="passwd" required>
 
-            <label for="passwd"> Password </label>
-            <input type="text" placeholder="Enter Password" name="passwd" required>
-
-            <div class="login-buttons">
-                <button class="loginBtn" type="submit">Iniciar Sessión</button>
-                <button class="registerBtn" type="submit">Registrar</button>
+                <div class="login-buttons">
+                    <button class="loginBtn" type="submit">Iniciar Sessión</button>
+                    <button class="registerBtn" type="submit">Registrar</button>
+                </div>
             </div>
-
         </div>
-    </div>
-
-</body>
+    </body>
 </html>
