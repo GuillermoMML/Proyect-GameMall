@@ -1,7 +1,6 @@
-
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #2F2F2B;
     color: white;
 }
@@ -67,8 +66,6 @@ body{
     border-radius: 5px;
 }
 
-
-
 #pagar{
     background-color: #262525; 
     grid-row: 2/4;
@@ -103,12 +100,14 @@ body{
     display: flex;
     flex-direction: row;
 }
+
 .linea{
     width: 100%;
     height: 1px;
     display: block;
     background-color: white;
 }
+
 #letra{
     height: 5px;
     width: 5px;
@@ -208,7 +207,132 @@ body{
     grid-template-columns: 150px 350px;
     margin-left: 20px;
     margin-bottom: 10px;
+} 
+
+h1 {
+    text-align: center;
+    color: #FE6F27;
 }
-.etiqueta{
-    
+
+img {
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+/* LOGIN PAGE */
+#login-page, #register-page, #contact-page {
+    background: -webkit-gradient(linear, left top, right bottom, from(#414141), to(#000000)) fixed;
+    /* TODO:// ADD FIREFOX, EDGE GRADIENTS*/
+}
+
+#login-page h1, #register-page h1, #contact-page h1 {
+    color: #fdfdfd;
+}
+
+/* INDEX */
+.tendencias, .topsales {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 29%;
+    padding: 10px;
+    background-color: gray;
+    margin: 1.4em;
+}
+
+.orangeLine {
+    border: 5px solid rgb(213, 138, 18);
+}
+
+.footerList {
+    text-align: center;
+}
+
+.footerList ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.footerList li {
+    display: inline-block;
+}
+
+footer {
+    background-color: #FE6F27;
+}
+
+footer h1 {
+    color: #fdfdfd;
+}
+
+/* REGISTER PAGE */
+
+/* LOGIN PAGE */
+input[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+}
+
+.login-buttons {
+    margin-top: 1.2em;
+}
+
+.loginBtn {
+    padding: 1.2em;
+    background-color: #FE6F27;
+    border-radius: 10px;
+}
+
+.registerBtn {
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+/* CONTACT US */
+textarea[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+    resize: vertical;
+    min-height: 5em;
+}
+
+.contact-element {
+    margin-bottom: 1.2em;
+}
+
+.radioButtons {
+    border: 2px solid rgb(89, 88, 88);
+    padding: 2em;
+    width: 93%;
+}
+
+.sendMessage {
+    margin-top: 1.2em;
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* GENERAL STYLE*/
+.center-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
