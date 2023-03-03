@@ -5,37 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>GAMEMALL</title>
 </head>
 <body>
     <div id="cabecera">
-        <div class="circulo" id="uno">1</div>
+        <div class="circulo">1</div>
         <div class="flecha"></div>
-        <div class="circulo" id="dos">2</div>
+        <div class="circulo">2</div>
         <div class="flecha"></div>
-        <div class="circulo" id="tres">3</div>
+        <div class="circulo">3</div>
     </div>
-
    
     <div id="producto">
         <div class="texto">Cesta</div>
         <div class="texto" id="texto2">Resumen</div>
         
         <div id="resumen">
-            <p>bjkabbjkvabv</p>
+            <div id="juego">bjkabbjkvabv</div>
+            <div id="nombre_juego">Nombre juego</div>
+            <div id="select">
+                <div class="combo">Precio</div>
+                <select name="combo" class="combo">
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                </select>
+                
+            </div>
+            
         </div>
         <div id="pagar">
-            <p>bjkabbjkvabv</p>
+            
+            <div class="resumen-pago">
+                <span>Precio oficial</span>
+                <span>55.99</span>
+            </div>
+            <div class="resumen-pago">
+                <span>Descuento</span>
+                <span>-20.50</span>
+            </div>
+            <div class="resumen-pago"> 
+                <span>Subtotal</span>
+                <span>35.49</span>
+            </div>
+            <button type="submit" id="boton-pago">Pagar</button>
+
+            <div id="despues-pagar">
+                <div class="linea"></div>
+                <div id="letra">o</div>
+                <div class="linea"></div>
+            </div>
+            
+            <div style="text-align: center">Seguir comprando</div>
+
         </div>
     </div>
 
     <div id="sugerencias">
-        <div class="suger" id="primero"></div>
-        <div class="suger"></div>
-        <div class="suger"></div>
-        <div>Primero</div>
-        <div>Segundo</div>
-        <div>Tercero</div>
+        <div id="recomendado" class="general">Recomendado</div>
+        <div class="suger" class="general"></div>
+        <div class="suger" class="general"></div>
+        <div class="suger" class="general"></div>
+        <div class="frase" class="general">Primero</div>
+        <div class="frase" class="general">Segundo</div>
+        <div class="frase" class="general">Tercero</div>
     </div>
 </body>
 </html>

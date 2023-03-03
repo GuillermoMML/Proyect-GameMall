@@ -1,12 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<div class="container">
+    <div class="row">
+      <div class="col py-5 text-center">
+        <h2>Formulario con Bootstrap</h2>
+        <p class="lead">Este es un ejemplo de formulario de pago usando bootstrap con grids anidados</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-8 order-2 order-md-1">
+        <h4 class="mb-3">Direccion de Envío</h4>
+        <form action="">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" name="apellido">
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="correo">Correo <span class="text-muted">(Opcional)</span></label>
+            <input type="email" class="form-control" placeholder="nombre@correo.com" name="correo">
+          </div>
+  
+          <div class="mb-3">
+            <label for="direccion">Direccion</label>
+            <input type="text" class="form-control" placeholder="1234 Calle Principal" name="direccion">
+          </div>
+  
+          <div class="row">
+            <div class="col-12 col-sm-4 mb-3">
+              <label for="pais">Pais</label>
+              <select name="pais" id="pais" class="custom-select d-block w-100">
+                                  <option value="">Seleccionar Pais</option>
+                                  <option value="mexico">Mexico</option>
+                                  <option value="españa">España</option>
+                                  <option value="colombia">Colombia</option>
+                              </select>
+            </div>
+            <div class="col-12 col-sm-4 mb-3">
+              <label for="estado">Localidad</label>
+              <select name="estado" id="estado" class="custom-select d-block w-100">
+                                  <option value="">Seleccionar Localidad</option>
+                                  <option value="">-</option>
+                              </select>
+            </div>
+            <div class="col-12 col-sm-4 mb-3">
+              <label for="codigo-postal">Codigo Postal</label>
+              <input type="text" id="codigo-postal" class="form-control">
+            </div>
+          </div>
+  
+          <hr>
+  
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="numero-tarjeta">Numero de tarjeta</label>
+              <input type="text" id="numero-tarjeta" class="form-control">
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="nombre-tarjeta">Nombre en la tarjeta</label>
+              <input type="text" id="nombre-tarjeta" class="form-control">
+              <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+            </div>          
+          </div>
+  
+          <div class="row">
+            <div class="col-6 col-sm-4 mb-3">
+              <label for="tarjeta-expiracion">Expiración</label>
+              <input type="text" id="tarjeta-expiracion" class="form-control">
+            </div>
+            <div class="col-6 col-sm-4 mb-3">
+              <label for="tarjeta-ccv">CVV</label>
+              <input type="text" id="tarjeta-ccv" class="form-control">
+            </div>
+          </div>
+  
+          <hr class="mb-4">
+          <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+        </form>
+      </div>
+      <div class="col-12 col-md-4 order-1 order-md-2">
+        <h4 class="mb-3 d-flex justify-content-between align-items-center">
+          <span class="text-muted">Tu Carrito</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between">
+            <div>
+              <h6 class="my-0">item1</h6>
+              <small class="text-muted">descripción</small>
+            </div>
+            <span class="text-muted">10€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <div>
+              <h6 class="my-0">item2</h6>
+              <small class="text-muted">descripción</small>
+            </div>
+            <span class="text-muted">20€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <div>
+              <h6 class="my-0">item3</h6>
+              <small class="text-muted">descripcion</small>
+            </div>
+            <span class="text-muted">3€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Codigo de descuento</h6>
+              <small class="text-success">DPS5</small>
+            </div>
+            <span class="text-success">-5€</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <span>Total (EUR)</span>
+            <strong>28€</strong>
+          </li>
+        </ul>
+        <form action="" class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cupon">
+            <div class="input-group-append">
+              <button class="btn btn-secondary">Canjear</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>

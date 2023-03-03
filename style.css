@@ -1,10 +1,11 @@
-/*Login css*/
+
 body{
     margin: 0px;
     padding: 0px;
     background-color: #2F2F2B;
     color: white;
 }
+/*Proceso de compra1*/
 #cabecera{
     background-color: #2F2F2B;
     height: 70px;
@@ -48,21 +49,166 @@ body{
     background-color: #262525;
     grid-row: 2/3;
 }
+#juego{
+    display: inline-block;
+    background-color: white;
+    height: 70px;
+    width: 150px;
+    margin: 30px 0px 0px 30px;
+}
+#nombre_juego{
+    display: inline-block;
+    margin-left: 20px;
+}
+.combo{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+
 #pagar{
     background-color: #262525; 
     grid-row: 2/4;
-}
-#sugerencias{
-    display: grid;
-    margin-top: 40px;
-    padding-top: 40px;
-    gap: 10px;
-    grid-template-columns: 33% 33% 33%;
-    
-}
-.suger{
-    height: 150px;
-    width: 150px;
-    background-color: white;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.resumen-pago{
+    color:white;
+    margin-bottom: 10px;  
+    margin-left: 10%;
+}
+
+#boton-pago{
+    height: 40px;
+    background-color: #FE6F27;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px  0px 10px;
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    border: 0px;
+    color: white;
+}
+
+#despues-pagar{
+    display: flex;
+    flex-direction: row;
+}
+.linea{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: white;
+}
+#letra{
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+#sugerencias{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 100px;
+    margin-left: 15px;   
+ 
+}
+
+.suger{
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    grid-row: 2/3;
+}
+
+#recomendado{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 10px;
+}
+.frase{
+    grid-row: 3/4;
+    margin-top: 10px;
+}
+.general{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Proceso de compra2*/
+/*
+    Id --> # 
+    Class --> .
+*/
+#formulario{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 20px;
+}
+#sub-formulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+#uno{
+    width: 80%;
+}
+#dos{
+   width: 80%;
+}
+#tres{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+}
+#cuatro{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+}
+#cinco{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 30%;
+    color: white;
+}
+.datos{
+    background-color: #262525;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
+#metodo-pago{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#promocion{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 75%;
+    height: 45%;
+    background-color: #262525;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.etiqueta{
+    
+}
