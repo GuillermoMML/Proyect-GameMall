@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>GAMEMALL</title>
+</head>
+<body>
+    <div id="cabecera">
+        <div class="circulo">1</div>
+        <div class="flecha"></div>
+        <div class="circulo">2</div>
+        <div class="flecha"></div>
+        <div class="circulo">3</div>
+    </div>
+    
+    <h3 style="margin-left: 20px;">Dirección de facturación</h3>
+
+    <form action="" id="formulario">
+        <div id="sub-formulario">
+            <input type="" placeholder="Nombre completo" id="uno" class="datos">
+            <input type="text" placeholder="DNI/CIF/NIF" id="dos" class="datos">
+            <input type="tel" placeholder="Teléfono móvil" id="tres" class="datos">
+            <input type="text" placeholder="Dirección" id="cuatro" class="datos">
+            <select name="combo" id="cinco" class="datos" area-placeholder="País">
+                <option >España</option>
+                <option >Francia</option>
+                <option >Alemania</option>
+                <option >Inglaterra</option>
+                <option >Italia</option>
+            </select>
+        </div>
+        <div class="datos">
+            <h3>Total</h3>
+            <button type="submit" id="boton-pago">Pagar</button>
+        </div>
+    </form>
+    
+    <h3 style="margin-left: 20px;">Método de pago</h3>
+
+    <div id="metodo-pago">
+        <form action="" id="tarjeta-credito">
+            <div class="itemform">
+                <label for="" class="etiqueta">Número de tarjeta</label>
+                <input type="text" class="datos" placeholder="1234 55678 9012 3456">
+            </div>
+            <div class="itemform">
+                <label for="" class="etiqueta">Fecha expiración</label>
+                <input type="text" class="datos" placeholder="MM/AA">
+            </div>
+            <div class="itemform">
+                <label for="" class="etiqueta">CVC/CVV</label>
+                <input type="text" class="datos" placeholder="3 dígitos">
+            </div>
+            <div class="itemform">
+                <label for="" class="etiqueta" >Nombre en la tarjeta</label>
+                <input type="text" class="datos" placeholder="Antonio Miranda">
+            </div>
+        </form>
+        <div id="promocion"></div>
+    </div>
+</body>
+</html>

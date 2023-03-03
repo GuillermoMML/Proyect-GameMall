@@ -5,6 +5,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: #2F2F2B;
+    color: white;
+
 }
 
 nav {
@@ -170,4 +172,336 @@ a {
     text-decoration: none;
     color: #FE6F27;
     text-decoration-color: #FE6F27;
+}
+/*Proceso de compra1*/
+#cabecera{
+    background-color: #2F2F2B;
+    height: 70px;
+    border-bottom: 3px solid #FE6F27;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #2F2F2B;
+    border-radius: 100%;
+    border: 3px solid #FE6F27;
+    color: white;
+}
+.flecha{
+    width: 50px;
+    height: 3px;
+    background-color: #FE6F27;
+   
+}
+#producto{ 
+    display: grid;
+    grid-template-columns:  60% 40%;
+    grid-template-rows: 10% 35% 55%;
+    height: 500px;
+    margin: 15px;
+    gap: 20px;
+}
+.texto{
+    grid-row: 1/2;
+}
+
+#resumen{
+    background-color: #262525;
+    grid-row: 2/3;
+}
+#juego{
+    display: inline-block;
+    background-color: white;
+    height: 70px;
+    width: 150px;
+    margin: 30px 0px 0px 30px;
+}
+#nombre_juego{
+    display: inline-block;
+    margin-left: 20px;
+}
+.combo{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#pagar{
+    background-color: #262525; 
+    grid-row: 2/4;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.resumen-pago{
+    color:white;
+    margin-bottom: 10px;  
+    margin-left: 10%;
+}
+
+#boton-pago{
+    height: 40px;
+    background-color: #FE6F27;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px  0px 10px;
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    border: 0px;
+    color: white;
+}
+
+#despues-pagar{
+    display: flex;
+    flex-direction: row;
+}
+
+.linea{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: white;
+}
+
+#letra{
+    height: 5px;
+    width: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+#sugerencias{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 100px;
+    margin-left: 15px;   
+ 
+}
+
+.suger{
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    grid-row: 2/3;
+}
+
+#recomendado{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 10px;
+}
+.frase{
+    grid-row: 3/4;
+    margin-top: 10px;
+}
+.general{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Proceso de compra2*/
+/*
+    Id --> # 
+    Class --> .
+*/
+#formulario{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 20px;
+}
+#sub-formulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+#uno{
+    width: 80%;
+}
+#dos{
+   width: 80%;
+}
+#tres{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+}
+#cuatro{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+}
+#cinco{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 30%;
+    color: white;
+}
+.datos{
+    background-color: #262525;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
+#metodo-pago{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#promocion{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 75%;
+    height: 45%;
+    background-color: #262525;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+} 
+
+h1 {
+    text-align: center;
+    color: #FE6F27;
+}
+
+img {
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+/* LOGIN PAGE */
+#login-page, #register-page, #contact-page {
+    background: -webkit-gradient(linear, left top, right bottom, from(#414141), to(#000000)) fixed;
+    /* TODO:// ADD FIREFOX, EDGE GRADIENTS*/
+}
+
+#login-page h1, #register-page h1, #contact-page h1 {
+    color: #fdfdfd;
+}
+
+/* INDEX */
+.tendencias, .topsales {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 29%;
+    padding: 10px;
+    background-color: gray;
+    margin: 1.4em;
+}
+
+.orangeLine {
+    border: 5px solid rgb(213, 138, 18);
+}
+
+.footerList {
+    text-align: center;
+}
+
+.footerList ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.footerList li {
+    display: inline-block;
+}
+
+footer {
+    background-color: #FE6F27;
+}
+
+footer h1 {
+    color: #fdfdfd;
+}
+
+/* REGISTER PAGE */
+
+/* LOGIN PAGE */
+input[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+}
+
+.login-buttons {
+    margin-top: 1.2em;
+}
+
+.loginBtn {
+    padding: 1.2em;
+    background-color: #FE6F27;
+    border-radius: 10px;
+}
+
+.registerBtn {
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+/* CONTACT US */
+textarea[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+    resize: vertical;
+    min-height: 5em;
+}
+
+.contact-element {
+    margin-bottom: 1.2em;
+}
+
+.radioButtons {
+    border: 2px solid rgb(89, 88, 88);
+    padding: 2em;
+    width: 93%;
+}
+
+.sendMessage {
+    margin-top: 1.2em;
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* GENERAL STYLE*/
+.center-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
