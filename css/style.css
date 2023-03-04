@@ -13,12 +13,12 @@ h1 {
     color: #FE6F27;
 }
 
-img {
+#index img {
     object-fit: cover;
     height: 80vh;
     width: 100%;
 }
-
+/* Cabecera */
 nav {
     background-color: #201C1C;
     height: 50px;
@@ -147,41 +147,39 @@ button{
     margin-right: 10em;
     margin-left: 2em;
 }
-
+/* Buscador*/
 .container {
     width: 100%;
     margin: 0 auto;
 }
 
-.row {
-    display: flex;
+.containerbuscado{
+    display:grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    grid-template-rows: 33.333333% 33.333333% 33.333333%;
+    gap: 1em;
+    margin: 5em;
+}
+
+.buscadoimg{
     width: 100%;
-    padding: 10px;
 }
 
-.col-1, .col-2, .col-3 {
-    margin: 2em;
-    width: 33.3333333%;
-    float:left;
-    height: 11em;
+#prev,
+#next{
+    display:inline-block;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 5%;
+
+}
+#next{
+    float:right;
 }
 
-#navegacion{
-    padding: 50px;
-}
-
-#navegacion #prev{
-    float: left;
-}
-
-#navegacion #next{
-    float: right;
-}
-
-.col-1 img, .col-2 img, .col-3 img {
-    width: 100%;
-    height: 100%;
-    border-radius:10px;
+.navegaciona {
+    text-decoration: none;
+    color: #FE6F27;
 }
 
 /* Proceso de Compra1 */
@@ -454,7 +452,9 @@ footer h1 {
 }
 
 /* LOGIN PAGE | REGISTER PAGE */
-input[type=text] {
+#contact-page input[type=text],
+#login-page input[type=text],
+#register-page input[type=text]{
     display: inline-block;
     width: 100%;
     padding: 1.2em;
