@@ -3,58 +3,54 @@
     <head>
         <title>GameMall - Contact</title>
         <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="contact-page">
         <div class="modal-contact center-modal">
             <h1>Contact Us</h1>
+            <div class="contact-element">
+                <label for="uname">Name</label><br>
+                <input type="text" placeholder="Enter Name" name="uname" required>
+            </div>
+            
+            <div class="contact-element">
+                <label for="lname">LastName</label><br>
+                <input type="text" placeholder="Enter LastName" name="lname" required>
+            </div>
+            
+            <div class="contact-element">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            
+            <div class="contact-element">
+                <label for="phonenmb">Phone Number</label><br>
+                <input type="text" placeholder="+34 123 456 789" name="phonenmb" required>
+            </div>
 
-                <div class="contact-element">
-                    <label for="uname">Name</label><br>
-                    <input type="text" placeholder="Enter Name" name="uname" required>
-                </div>
-                
-                <div class="contact-element">
-                    <label for="lname">LastName</label><br>
-                    <input type="text" placeholder="Enter LastName" name="lname" required>
-                </div>
-                
-                <div class="contact-element">
-                    <label for="email">Email</label><br>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                </div>
-                
-                <div class="contact-element">
-                    <label for="phonenmb">Phone Number</label><br>
-                    <input type="text" placeholder="+34 123 456 789" name="phonenmb" required>
-                </div>
+            <div class="contact-element">
+                <label for="phonenmb">Message</label><br>
+                <textarea type="text" placeholder="Explain here your issue" name="msg"></textarea><br>
+            </div>
 
-                <div class="contact-element">
-                    <label for="phonenmb">Message</label><br>
-                    <textarea type="text" placeholder="Explain here your problem" name="msg"></textarea><br>
-                </div>
+            <div class="radioButtons">
+                <label class="radioButton">
+                    <input type="radio" name="gender" value="male"> Topic 1
+                </label>
+                    
+                <label class="radioButton">
+                    <input type="radio" name="gender" value="female"> Topic 2
+                </label>
 
-                <div class="radioButtons">
-                    <label class="radioButton">
-                        <input type="radio" name="gender" value="male"> Male
-                    </label>
-                        
-                    <label class="radioButton">
-                        <input type="radio" name="gender" value="female"> Female
-                    </label>
+                <label class="radioButton">
+                    <input type="radio" name="gender" value="female"> Topic 3
+                </label>
 
-                    <label class="radioButton">
-                        <input type="radio" name="gender" value="female"> Female
-                    </label>
-
-                    <label class="radioButton">
-                        <input type="radio" name="gender" value="female"> Female
-                    </label>
-                        
-                    <label class="radioButton">
-                        <input type="radio" name="gender" value="other"> Other
-                    </label><br>
-                </div>
-                <button class="sendMessage" type="submit">Send Message</button>
+                <label class="radioButton">
+                    <input type="radio" name="gender" value="female"> Topic 4
+                </label>
+            </div>
+            <button class="sendMessage" type="submit">Send Message</button>
         </div>
     </body>
 </html>
