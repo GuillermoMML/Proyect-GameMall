@@ -105,6 +105,7 @@ button{
     border-radius: 5px 0 0 5px;
     background: #F4FAF9;
     transition: background 0.25s, box-shadow 0.25s;
+    border-radius: 5px 0px 0px 5px !important;
 }
 
 .searchbar__input:focus {
@@ -391,6 +392,7 @@ button{
 
 .itemform {
     display: grid;
+    gap: 10px;
     grid-template-columns: 150px 350px;
     margin-left: 20px;
     margin-bottom: 10px;
