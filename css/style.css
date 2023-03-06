@@ -21,7 +21,7 @@ h1 {
 /* Cabecera */
 nav {
     background-color: #201C1C;
-    height: 50px;
+    height: 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +153,10 @@ a {
     margin: 0 auto;
 }
 
+#buscado .price,
+#buscado .title{
+    display: block;
+}
 .containerbuscado{
     display:grid;
     grid-template-columns: 33.333333% 33.333333% 33.333333%;
@@ -177,6 +181,9 @@ a {
     float:right;
 }
 
+#navegacion{
+    height: 100%;
+}
 .navegaciona {
     text-decoration: none;
     color: #FE6F27;

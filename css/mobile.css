@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+@media screen and (max-width: 500px){
+    .body{
+        font-family: 'Concert One', cursive;
+        margin: 0;
+        padding: 0;
+        background-color: #2F2F2B;
+        color: white;
+        overflow-x: hidden;
+    }
+    .containerbuscado{
+        display:grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 11.111111% 11.111111% 11.111111% 11.111111% 11.111111% 11.111111% 11.111111% 11.111111% 11.111111%;
+        gap: 1em;
+        margin-bottom: 2em;
+        padding-bottom: 6em;
+        justify-content: center;
+        margin:auto;
+    }
+    
+}
