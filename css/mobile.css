@@ -46,5 +46,30 @@
     #UserName{
         margin: auto;
     }
-    
+
+
+@media (max-width: 768px) { 
+    .loginBtn {
+        padding: 0.5em;
+        height: 4em;
+        font-size: small;
+        background-color: #FE6F27;
+        border-radius: 10px;
+        margin-bottom: 0.5em;
+        width: 13em;
+    }
+
+    .registerBtn {
+        padding: 0.5em;
+        height: 4em;
+        font-size: small;
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        width: 13em;
+    }
+
+    .radioButtons {
+        font-size: small;
+    }
+
 }
