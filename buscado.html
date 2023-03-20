@@ -9,78 +9,19 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
       <link href="css/mobile.css" rel="stylesheet">
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="script/navegacion.js"></script>
+      <script src="script/displayImagesBuscado.js"></script>
       <title>GameMall</title>
   </head>
+
   <body id="buscado">
-    <nav>
-      <div class="left-elements">
-        <a href="#">☰ Todas las categorias</a>
-        <form action="./" method="get">
-            <div class="searchbar">
-                <input type="text" class="searchbar__input" name="q" placeholder="Search">
-                <button type="submit" class="searchbar__button">
-                    <i class="material-icons">search</i>
-                </button>
-            </div>
-        </form>
-      </div>
-      <div class="center-element">
-        <h1><a href="#"> GameMall</a></h1>
-      </div>
-      <div class="right-elements">
-          <button>Login</button>
-          <button>Registrarse</button>
-      </div>
-    </nav>
-    <section class="containerbuscado">
-          <div class="col-1">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>
-          <div class="col-1">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>
-          <div class="col-1">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>
-          <div class="col-2">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>         
-          <div class="col-2">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>         
-          <div class="col-2">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>         
-      
-          <div class="col-3"id="tercera">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>          
-          <div class="col-3" >
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>          
-          <div class="col-3">
-            <img src="img/EGS_HogwartsLegacyDigitalDeluxeEdition_AvalancheSoftware_Editions_S1_2560x1440-65f2cce001ab1893cca57f48aeb25196.jfif" class="buscadoimg">
-            <label for="Title" class="title">Title</label>
-            <label for="price" class="price">Price</label>
-          </div>          
-     
+    <header>
+        <cabecera-nologin></cabecera-nologin>
+    </header>
+    <section id="containerbuscado">
+
       </section>
       <div id="navegacion">
         <div id="prev">
