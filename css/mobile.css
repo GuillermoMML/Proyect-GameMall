@@ -35,10 +35,7 @@
         content: ☰;
     }
     .right-elements{
-        width: auto;
-    }
-    icono{
-        font-size: smaller;
+        justify-content: space-between;
     }
     #categorias{
         font-size: smaller;
