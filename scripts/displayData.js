@@ -2,7 +2,7 @@
         // define the URL of the JSON file
         const url = "./json/datos.json";
 
-    // use the fetch API to load the JSON file
+        // use the fetch API to load the JSON file
         fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -39,7 +39,7 @@
         // define the URL of the JSON file
         const url = "./json/datos.json";
 
-    // use the fetch API to load the JSON file
+        // use the fetch API to load the JSON file
         fetch(url)
             .then(response => response.json())
             .then(data => {
