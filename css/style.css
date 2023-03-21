@@ -65,6 +65,7 @@ a {
     margin-right: 30px;
 }
 
+
 footer {
     background-color: #FE6F27;
 }
@@ -714,7 +715,7 @@ textarea[type=text] {
 
     }
 
-    #dato0 {
+    #dato0{
         order: 1;
     }
 
@@ -761,4 +762,5 @@ textarea[type=text] {
 
 .form-control {
     padding: 1.2em !important;
+}
 }
