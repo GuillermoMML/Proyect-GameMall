@@ -160,7 +160,7 @@ footer h1 {
 }
 
 .icon {
-    font-size: 3em;
+    font-size: 3em !important;
     border-radius: 100%;
     background-color: #FE6F27;
     color: #201C1C;

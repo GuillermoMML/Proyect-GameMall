@@ -43,6 +43,9 @@
     #UserName{
         margin: auto;
     }
+    .price{
+        font-size:1;
+    }
 
 }
 @media (max-width: 768px) { 
