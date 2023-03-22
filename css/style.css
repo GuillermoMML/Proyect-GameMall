@@ -85,9 +85,10 @@ footer h1 {
     align-items: center;
 }
 
-.left-elements a {
-    padding-right: 30px;
-    color:#FE6F27
+.left-elements label {
+    color:#FE6F27;
+    cursor: pointer;
+    
 }
 
 .center-element {

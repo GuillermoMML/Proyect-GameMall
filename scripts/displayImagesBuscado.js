@@ -21,7 +21,6 @@ function mostrarPersonas() {
 
                 const price = document.createElement('label');
                 price.innerHTML = `${data.price}`;
-                price.htmlFor = "price";
                 price.className = "price";
                 price.classList.add('price')
                 div.appendChild(price);
