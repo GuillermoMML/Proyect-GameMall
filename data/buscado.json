@@ -40,13 +40,13 @@
       "id"  : 8,
       "img" : "https://s3.gaming-cdn.com/images/products/10676/616x353/deliver-us-mars-pc-juego-steam-cover.jpg?v=1675327638",
       "title": "Deliver Us Mars",
-      "price" : "20.5 €"
+      "price" : "42.5 €"
     },
     {
       "id"  : 9,
       "img" : "https://s3.gaming-cdn.com/images/products/11321/616x353/ship-of-fools-pc-juego-steam-cover.jpg?v=1669195359",
       "title": "Ship of Fools",
-      "price" : "20.5 €"
+      "price" : "12.5 €"
     },
     {
       "id"  : 10,
@@ -58,7 +58,7 @@
       "id"  : 11,
       "img" : "https://s3.gaming-cdn.com/images/products/13346/616x353/warhammer-40-000-gladius-adepta-sororitas-pc-juego-steam-cover.jpg?v=1671452982",
       "title": "Warhammer 40000 Gladius",
-      "price" : "20.5 €"
+      "price" : "11.5 €"
     },
     {
       "id"  : 12,
@@ -76,7 +76,7 @@
       "id"  : 14,
       "img" : "https://s2.gaming-cdn.com/images/products/13390/616x353/street-fighter-6-deluxe-edition-deluxe-edition-pc-juego-steam-cover.jpg?v=1673626264",
       "title": "Street Fighter",
-      "price" : "20.5 €"
+      "price" : "90.5 €"
     },
     {
       "id"  : 15,
@@ -88,7 +88,7 @@
       "id"  : 16,
       "img" : "https://s2.gaming-cdn.com/images/products/13387/616x353/star-wars-jedi-survivor-xbox-series-x-s-xbox-series-x-s-juego-microsoft-store-europe-cover.jpg?v=1675240638",
       "title": "Start Wars Jedi Survivor",
-      "price" : "20.5 €"
+      "price" : "1.5 €"
     }
   ]
 }

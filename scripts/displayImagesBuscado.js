@@ -2,7 +2,6 @@ function mostrarPersonas() {
     fetch('./data/buscado.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const container = document.getElementById('containerbuscado');
             data.buscado.map(data => {
                 const div = document.createElement('div');
@@ -12,22 +11,21 @@ function mostrarPersonas() {
                 img.src = data.img;
                 img.classList.add('buscadoimg')
                 div.appendChild(img)
-                const price = document.createElement('label');
-                price.innerHTML = `${data.price}`;
-                price.htmlFor = "price";
-                price.className = "price";
-                price.classList.add('price')
-
-                div.appendChild(price);
 
                 const title = document.createElement('label')
                 title.innerHTML = data.title;
                 title.htmlFor = "Title";
                 title.className = "title";
                 title.classList.add('title')
-
                 div.appendChild(title);
 
+                const price = document.createElement('label');
+                price.innerHTML = `${data.price}`;
+                price.className = "price";
+                price.classList.add('price')
+                div.appendChild(price);
+
+                
                 container.appendChild(div)
             });
             return container;
