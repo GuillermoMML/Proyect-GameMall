@@ -74,5 +74,19 @@
       "id": 8,
       "image_url": "https://s3.gaming-cdn.com/images/products/6818/616x353/ea-sports-ufc-3-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-juego-microsoft-store-cover.jpg?v=1651663290"
     }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "image_url": "https://s1.gaming-cdn.com/img/products/10545/pcover/10545.jpg?v=1665157647"
+    },
+    {
+      "id": 2,
+      "image_url": "https://s3.gaming-cdn.com/img/products/12863/pcover/12863.jpg?v=1664291457"
+    },
+    {
+      "id": 3,
+      "image_url": "https://s1.gaming-cdn.com/img/products/7590/pcover/7590.jpg?v=1651746963"
+    }
   ]
 }

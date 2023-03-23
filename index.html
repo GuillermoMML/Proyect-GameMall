@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>GameMall</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/mobile.css.css" rel="stylesheet">
+        <link href="css/mobile.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="scripts/navegacion.js"></script>
         <script src="scripts/displayData.js"></script>
+        <script src="scripts/slider.js"></script>
     </head>
-    <body>
-       <nav>
-          <div class="left-elements">
-            <a href="#">☰ Todas las categorias</a>
-            <form action="./" method="get">
-                <div class="searchbar">
-                    <input type="text" class="searchbar__input" name="q" placeholder="Search">
-                    <button type="submit" class="searchbar__button">
-                        <i class="material-icons">search</i>
-                    </button>
-                </div>
-            </form>
-          </div>
-          <div class="center-element">
-            <h1><a href="#"> GameMall</a></h1>
-          </div>
-          <div class="right-elements">
-              <button>Login</button>
-              <button>Registrarse</button>
-          </div>
-        </nav>
-      
-        <div id="container">
-            <img src="img/Grey_full.png">
+    <body id="index">
+    <cabecera-nologin></cabecera-nologin>
+    <div class="slider">
+        <div class="slider-wrapper">
         </div>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+
        <div class="tendencias">
            <h1>Tendencias</h1>
            <hr class="orangeLine">

@@ -7,16 +7,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"/>    
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/mobile.css.css" rel="stylesheet">
+        <link href="css/mobile.css" rel="stylesheet">
+        <script src="scripts/sidebar.js"></script> <!-- Agregue un archivo de script -->
+
     </head>
     <body>
         <nav>
             <div class="left-elements">
-                <a href="#">☰ Todas las categorias</a>
+                <div class="toggle-btn">
+                    <label for="inputCheck">&#9776; Todas las categorias</label>
+                    <!--<input type="checkbox" id="inputCheck">-->
+                </div>
                 <form action="./" method="get">
                     <div class="searchbar">
-                        <input type="text" class="searchbar__input" name="q" placeholder="Search">
-                        <button type="submit" class="searchbar__button">
+                        <input type="text" class="searchbarinput" name="q" placeholder="Search">
+                        <button type="submit" class="searchbarbutton">
                             <i class="material-icons">search</i>
                         </button>
                     </div>

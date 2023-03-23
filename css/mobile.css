@@ -1,4 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
+
+@media screen and (max-width: 818px){
+    .body{
+        font-family: 'Concert One', cursive;
+        margin: 0;
+        padding: 0;
+        background-color: #2F2F2B;
+        color: white;
+        overflow-x: hidden;
+    }
+    .containerbuscado{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 1em;
+        margin-bottom: 2em;
+        padding-bottom: 6em;
+        justify-content: center;
+        margin:1em;
+    }
+    #navegacion{
+        margin-top: 5%;
+    }
+    .right-elements button{
+        display: none;
+    }
+
+    .left-elements form{
+        display:none;
+    }
+    a:before{
+
+        content: ☰;
+    }
+    .right-elements{
+        justify-content: space-between;
+    }
+    #categorias{
+        font-size: smaller;
+    }
+    #UserName{
+        margin: auto;
+    }
+    .price{
+        font-size:1;
+    }
+
+}
 @media (max-width: 768px) { 
     .loginBtn {
         padding: 0.5em;
@@ -22,4 +71,5 @@
     .radioButtons {
         font-size: small;
     }
+
 }
