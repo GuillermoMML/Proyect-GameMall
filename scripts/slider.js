@@ -5,7 +5,7 @@ function reloadSlider() {
 
     let currentSlideIndex = 0;
 
-    fetch("./json/datos.json")
+    fetch("./data/datos.json")
         .then((response) => response.json())
         .then((data) => {
             data.slider.forEach((slide) => {

@@ -1,5 +1,5 @@
 function mostrarPersonas() {
-    fetch('./data/buscado.json')
+    fetch('./data/datos.json')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('containerbuscado');

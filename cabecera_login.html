@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GAMEMALL</title>
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"/>    
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/mobile.css" rel="stylesheet">
-        <script src="scripts/sidebar.js"></script> <!-- Agregue un archivo de script -->
 
-    </head>
-    <body>
-        <nav>
-            <div class="left-elements">
-                <div class="toggle-btn">
-                    <label for="inputCheck">&#9776; Todas las categorias</label>
-                    <!--<input type="checkbox" id="inputCheck">-->
+<head>
+    <title>GAMEMALL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <script src="scripts/sidebar.js"></script> <!-- Agregue un archivo de script -->
+
+</head>
+
+<body>
+    <nav>
+        <div class="left-elements">
+            <div class="toggle-btn">
+                <label for="inputCheck">&#9776; Todas las categorias</label>
+                <!--<input type="checkbox" id="inputCheck">-->
+            </div>
+            <form action="./" method="get">
+                <div class="searchbar">
+                    <input type="text" class="searchbarinput" name="q" placeholder="Search">
+                    <button type="submit" class="searchbarbutton">
+                        <i class="material-icons">search</i>
+                    </button>
                 </div>
-                <form action="./" method="get">
-                    <div class="searchbar">
-                        <input type="text" class="searchbarinput" name="q" placeholder="Search">
-                        <button type="submit" class="searchbarbutton">
-                            <i class="material-icons">search</i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="center-element">
-                <h1><a href="#"> GameMall</a></h1>
-            </div>
-            <div class="right-elements">
-                <a href="#"><span class="material-icons-outlined icon">person</span></a>
-                <span id="UserName">UserName</span>
-            </div>
-        </nav>
-    </body>
+            </form>
+        </div>
+        <div class="center-element">
+            <h1><a href="#"> GameMall</a></h1>
+        </div>
+        <div class="right-elements">
+            <a href="#"><span class="material-icons-outlined icon">person</span></a>
+            <span id="UserName">UserName</span>
+        </div>
+    </nav>
+</body>
+
 </html>
