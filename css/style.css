@@ -52,8 +52,6 @@ a {
 }
 
 .right-elements button {
-    background-color: #FE6F27;
-    color: #201C1C;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -214,12 +212,12 @@ footer h1 {
 }
 
 .row {
-    display: flex;
-    width: 100%;
-
+    display: flex; /* use flexbox to center the row */
+    justify-content: center; /* center the row horizontally */
 }
 
 .buscadoimg{
+    cursor:pointer;
     width: 100%;
     border-radius: 10px;
 }
@@ -466,6 +464,7 @@ footer h1 {
 }
 
 
+
 .row:after {
     content: "";
     display: table;
@@ -552,7 +551,7 @@ textarea[type=text] {
     padding: 1.2em;
     border: 2px solid rgb(89, 88, 88);
     resize: vertical;
-    min-height: 5em;
+    min-height: 10em;
 }
 
 .radioButtons {
