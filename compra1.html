@@ -6,9 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/mobile.css.css" rel="stylesheet">
+        <script src="scripts/navegacion.js"></script>
+        <script src="scripts/recomendados.js"></script>
         <title>GameMall - Compra1</title>
     </head>
     <body>
+        <div>
+            <cabecera-nologin></cabecera-nologin>
+        </div>
         <div id="cabecera">
             <div class="circulo">1</div>
             <div class="flecha"></div>
@@ -22,8 +27,8 @@
             <div class="texto" id="texto2">Resumen</div>
             
             <div id="resumen">
-                <div id="juego"></div>
-                <div id="nombre_juego">Nombre juego</div>
+                <img src="https://s2.gaming-cdn.com/images/products/9034/616x353/a-plague-tale-requiem-pc-juego-steam-cover.jpg?v=1666096248" id="carro-juego"></img>
+                <div id="nombre_juego">Plague Tale</div>
                 <div id="select">
                     <div class="combo">Precio</div>
                     <select name="combo" class="combo">
@@ -36,36 +41,29 @@
                 </div>
             </div>
             <div id="pagar">
-                <div class="resumen-pago">
+                <section class="resumen-pago">
                     <span>Precio oficial</span>
                     <span>55.99 EUR</span>
-                </div>
-                <div class="resumen-pago">
+                </section>
+                <section class="resumen-pago">
                     <span>Descuento</span>
                     <span>-20.50 EUR</span>
-                </div>
-                <div class="resumen-pago"> 
+                </section>
+                <section class="resumen-pago"> 
                     <span>Subtotal</span>
                     <span>35.49 EUR</span>
-                </div>
+                </section>
                 <button type="submit" id="boton-pago">Pagar</button>
-                <div id="despues-pagar">
+                <section id="despues-pagar">
                     <div class="linea"></div>
                     <div id="letra">o</div>
                     <div class="linea"></div>
-                </div> 
+                </section> 
                 <div style="text-align: center">Seguir comprando</div>
             </div>
         </div>
-
-        <div id="sugerencias">
-            <div id="recomendado" class="general" id="dato0">Recomendado</div>
-            <div class="suger" class="general" id="caja1"></div>
-            <div class="suger" class="general" id="caja2"></div>
-            <div class="suger" class="general" id="caja3"></div>
-            <div class="frase" class="general" id="dato1">Primero</div>
-            <div class="frase" class="general" id="dato2">Segundo</div>
-            <div class="frase" class="general" id="dato3">Tercero</div>
-        </div>
+        
+        <section id="sugerencias">
+            <!--Contenido del script-->
     </body>
 </html>
