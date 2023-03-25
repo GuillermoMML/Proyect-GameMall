@@ -1,13 +1,13 @@
 class HeaderLogin extends HTMLElement{
 
     connectedCallback() {
-        fetch('../cabecera_login.html')
+        fetch('./cabecera_login.html')
           .then(response => response.text())
           .then(html => {
             this.innerHTML = html;
           })
           .catch(error => {
-            console.error('Error al cargar el archivo HTML:', error);
+            console.log('Error al cargar el archivo HTML:', error);
           });
       }
 }
@@ -15,13 +15,13 @@ class HeaderLogin extends HTMLElement{
 
 class HeaderNoLogin extends HTMLElement{
     connectedCallback() {
-        fetch('../cabecera_nologin.html')
+        fetch('./cabecera_nologin.html')
           .then(response => response.text())
           .then(html => {
             this.innerHTML = html;
           })
           .catch(error => {
-            console.error('Error al cargar el archivo HTML:', error);
+            console.log('Error al cargar el archivo HTML:', error);
           });
       }
 }

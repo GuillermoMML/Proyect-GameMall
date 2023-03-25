@@ -52,8 +52,6 @@ a {
 }
 
 .right-elements button {
-    background-color: #FE6F27;
-    color: #201C1C;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -220,6 +218,7 @@ footer h1 {
 }
 
 .buscadoimg{
+    cursor:pointer;
     width: 100%;
     border-radius: 10px;
 }
