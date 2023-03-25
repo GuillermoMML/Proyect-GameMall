@@ -88,5 +88,12 @@
       "id": 3,
       "image_url": "https://s1.gaming-cdn.com/img/products/7590/pcover/7590.jpg?v=1651746963"
     }
+  ],
+  "comprado":[
+    {
+      "id": 1,
+      "image_url": "https://s1.gaming-cdn.com/img/products/10545/pcover/10545.jpg?v=1665157647"
+    }
   ]
+
 }
