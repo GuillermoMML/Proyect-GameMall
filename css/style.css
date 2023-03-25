@@ -65,6 +65,7 @@ a {
     margin-right: 30px;
 }
 
+
 footer {
     background-color: #FE6F27;
 }
@@ -84,9 +85,10 @@ footer h1 {
     align-items: center;
 }
 
-.left-elements a {
-    padding-right: 30px;
-    color:#FE6F27
+.left-elements label {
+    color:#FE6F27;
+    cursor: pointer;
+    
 }
 
 .center-element {
@@ -121,26 +123,26 @@ footer h1 {
     max-width: 100%;
 }
 
-.searchbar__input {
+.searchbarinput {
     flex-grow: 1;
-    padding: 10px;
+    padding: 10px !important;
     outline: none;
-    border: 1px solid #FE6F27;
-    border-radius: 5px 0 0 5px;
-    background: #F4FAF9;
+    border: 1px solid #FE6F27 !important;
+    border-radius: 5px 0 0 5px !important;
+    background: #FE6F27;
     transition: background 0.25s, box-shadow 0.25s;
  }
 
-.searchbar__input:focus {
+.searchbarinput:focus {
     background: white;
     box-shadow: 0 0 2px #FE6F27;
 }
 
-.searchbar__input::placeholder {
-    color: #8CC6BA;
+.searchbarinput::placeholder {
+    color: black;
 }
 
-.searchbar__button {
+.searchbarbutton {
     width: 40px;
     background: #FE6F27;
     color: #ffffff;
@@ -154,12 +156,12 @@ footer h1 {
     user-select: none;
 }
 
-.searchbar__button:active {
+.searchbarbutton:active {
     box-shadow: inset 0 0 30px rgb(0, 0, 0);
 }
 
 .icon {
-    font-size: 3em;
+    font-size: 3em !important;
     border-radius: 100%;
     background-color: #FE6F27;
     color: #201C1C;
@@ -714,7 +716,7 @@ textarea[type=text] {
 
     }
 
-    #dato0 {
+    #dato0{
         order: 1;
     }
 

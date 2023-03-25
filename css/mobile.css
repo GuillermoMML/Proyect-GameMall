@@ -35,10 +35,7 @@
         content: ☰;
     }
     .right-elements{
-        width: auto;
-    }
-    icono{
-        font-size: smaller;
+        justify-content: space-between;
     }
     #categorias{
         font-size: smaller;
@@ -46,8 +43,11 @@
     #UserName{
         margin: auto;
     }
+    .price{
+        font-size:1;
+    }
 
-
+}
 @media (max-width: 768px) { 
     .loginBtn {
         padding: 0.5em;

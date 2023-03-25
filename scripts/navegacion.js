@@ -1,12 +1,29 @@
-class HeaderNoLogin extends HTMLElement{
-    constructor(){
-        super()
-    }
-    connectedCallback(){
-        this.innerHTML = '<nav><div class="left-elements"><a href="#">☰ Todas las categorias</a><form action="../script" method="get"><div class="searchbar"><input type="text" class="searchbarinput" name="q" placeholder="Search"><button type="submit" class="searchbarbutton"><i class="material-icons">search</i></button></div></form></div><div class="center-element"><h1><a href="#"> GameMall</a></h1></div><div class="right-elements"><a href="#"><span class="material-icons-outlined icon">person</span></a><span id="UserName">UserName</span></div></nav>'
-    }
-}
 class HeaderLogin extends HTMLElement{
 
+    connectedCallback() {
+        fetch('../cabecera_login.html')
+          .then(response => response.text())
+          .then(html => {
+            this.innerHTML = html;
+          })
+          .catch(error => {
+            console.error('Error al cargar el archivo HTML:', error);
+          });
+      }
+}
+
+
+class HeaderNoLogin extends HTMLElement{
+    connectedCallback() {
+        fetch('../cabecera_nologin.html')
+          .then(response => response.text())
+          .then(html => {
+            this.innerHTML = html;
+          })
+          .catch(error => {
+            console.error('Error al cargar el archivo HTML:', error);
+          });
+      }
 }
 window.customElements.define('cabecera-nologin', HeaderNoLogin)
+window.customElements.define('cabecera-login', HeaderLogin)
