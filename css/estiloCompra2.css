@@ -85,11 +85,12 @@ body{
     
 }
 .datos {
-    background-color: #262525;
-    padding: 10px;
+    background-color: #262525 !important; 
+    padding: 10px !important;
     border-radius: 10px;
     color: white;
     border: 2px solid rgb(89, 88, 88); 
+    
 }
 
 #metodo-pago{
@@ -124,15 +125,20 @@ body{
     #metodo-pago input{
         margin-top: 3%;
         margin-bottom: 3%;
-        width: 70%;
+        width: 80%;
     }
     #promocion{
         height: 150px;
         margin-bottom: 3%; 
+        width: 85%;
     }
     #bloque-pagar{
         order: 4;
         height: 200px;
         margin-bottom: 3%;
+        width: 85%;
+    }
+    .datos{
+        width: 100%;
     }
 }   
