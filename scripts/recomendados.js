@@ -1,5 +1,5 @@
 function mostrarRecomendados() {
-    fetch('./data/recomendados.json')
+    fetch('./data/datos.json')
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('sugerencias');
