@@ -209,6 +209,7 @@ footer h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 2%;
+    margin-top: 5em;
 }
 
 .row {
