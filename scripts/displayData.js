@@ -37,7 +37,7 @@
 
     const displayTopVentas = (string) => {
         // define the URL of the JSON file
-        const url = "./json/datos.json";
+        const url = "./data/datos.json";
 
         // use the fetch API to load the JSON file
         fetch(url)
