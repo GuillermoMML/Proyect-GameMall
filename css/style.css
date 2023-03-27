@@ -255,6 +255,7 @@ footer h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 4.7em;
 }
 
 .circulo {
@@ -582,10 +583,8 @@ textarea[type=text] {
     transform: translate(-50%, -50%);
 }
 
-
+/*Compra1 media query*/
 @media (max-width: 800px) {
-
-
     /*Resumen y pagar compra1*/
     #producto {
         display: grid;
@@ -642,7 +641,6 @@ textarea[type=text] {
     #sugerencias {
         display: flex;
         flex-direction: column;
-        /*flex-wrap: wrap;*/
         margin: 100px 15px 15px 15px;
     }
     

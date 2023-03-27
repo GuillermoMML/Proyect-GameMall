@@ -43,4 +43,9 @@ footer{
     height: 40rem;
     font-size: 1.6rem;
 }
+@media (max-width: 800px) {
+    #boton-compra input{
+        font-size: 80%;
+    }
+}
 
