@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'Concert One', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #2F2F2B;
+  color: white;
+  overflow-x: hidden;
+}
