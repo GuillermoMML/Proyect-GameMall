@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.price{
+    color: red;
+}
+#containerbuscado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 2%;
+    margin-top: 5em;
+}
+
+.row {
+    display: flex; /* use flexbox to center the row */
+    justify-content: center; /* center the row horizontally */
+}
+
+.buscadoimg{
+    cursor:pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#prev,
+#next{
+    display:inline-block;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 5%;
+
+}
+
+#next{
+    float:right;
+}
+#navegacion{
+    margin: 5%;
+}
+.navegaciona {
+    text-decoration: none;
+    color: #FE6F27;
+}
