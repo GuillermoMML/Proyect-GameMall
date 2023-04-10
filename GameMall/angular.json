@@ -27,7 +27,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/js/slider.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +91,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/js/slider.js"
+            ]
           }
         }
       }
