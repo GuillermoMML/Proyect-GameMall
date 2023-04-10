@@ -139,14 +139,5 @@
 #sugerencias .price{
     float: right;
 }
-.suger {
-    height: 150px;
-    width: 200px;
-    background-color: white;
-    grid-row: 2/3;
-}
 
-.general {
-    margin: 0px;
-    padding: 0px;
-}
+

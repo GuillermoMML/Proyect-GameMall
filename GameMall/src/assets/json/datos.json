@@ -1,0 +1,210 @@
+{
+    "buscado": [
+      {
+        "id": 1,
+        "img": "https://s2.gaming-cdn.com/images/products/7072/616x353/hogwarts-legacy-pc-juego-steam-europe-cover.jpg?v=1676112832",
+        "title": "Hogwarts legacy",
+        "price": "20.5 €"
+      },
+      {
+        "id": 2,
+        "img": "https://s1.gaming-cdn.com/images/products/13500/616x353/atomic-heart-premium-edition-premium-edition-pc-juego-steam-cover.jpg?v=1678707169",
+        "title": "Atomic Heart Premium edition",
+        "price": "20.5 €"
+      },
+      {
+        "id": 4,
+        "img": "https://s2.gaming-cdn.com/images/products/13273/616x353/jurassic-world-evolution-2-dominion-malta-expansion-pc-juego-steam-cover.jpg?v=1670516832",
+        "title": "Jurrassic world evolution 2",
+        "price": "20.5 €"
+      },
+      {
+        "id": 5,
+        "img": "https://s2.gaming-cdn.com/images/products/7111/616x353/forspoken-pc-juego-steam-europe-cover.jpg?v=1674831248",
+        "title": "Frospoken",
+        "price": "20.5 €"
+      },
+      {
+        "id": 6,
+        "img": "https://s3.gaming-cdn.com/images/products/13016/616x353/rimworld-biotech-pc-mac-juego-steam-cover.jpg?v=1670260786",
+        "title": "Rimwold Biotech",
+        "price": "20.5 €"
+      },
+      {
+        "id": 7,
+        "img": "https://s2.gaming-cdn.com/images/products/9034/616x353/a-plague-tale-requiem-pc-juego-steam-cover.jpg?v=1666096248",
+        "title": "Plague Tale",
+        "price": "20.5 €"
+      },
+      {
+        "id": 8,
+        "img": "https://s3.gaming-cdn.com/images/products/10676/616x353/deliver-us-mars-pc-juego-steam-cover.jpg?v=1675327638",
+        "title": "Deliver Us Mars",
+        "price": "42.5 €"
+      },
+      {
+        "id": 9,
+        "img": "https://s3.gaming-cdn.com/images/products/11321/616x353/ship-of-fools-pc-juego-steam-cover.jpg?v=1669195359",
+        "title": "Ship of Fools",
+        "price": "12.5 €"
+      },
+      {
+        "id": 10,
+        "img": "https://s2.gaming-cdn.com/images/products/12973/616x353/one-piece-odyssey-deluxe-edition-deluxe-edition-pc-juego-steam-cover.jpg?v=1673544982",
+        "title": "One Piece Deluxe",
+        "price": "20.5 €"
+      },
+      {
+        "id": 11,
+        "img": "https://s3.gaming-cdn.com/images/products/13346/616x353/warhammer-40-000-gladius-adepta-sororitas-pc-juego-steam-cover.jpg?v=1671452982",
+        "title": "Warhammer 40000 Gladius",
+        "price": "11.5 €"
+      },
+      {
+        "id": 12,
+        "img": "https://s2.gaming-cdn.com/images/products/13342/616x353/like-a-dragon-ishin-digital-deluxe-digital-deluxe-pc-juego-steam-europe-cover.jpg?v=1677057825",
+        "title": "Like a Dragon Ishin",
+        "price": "20.5 €"
+      },
+      {
+        "id": 13,
+        "img": "https://s2.gaming-cdn.com/images/products/12322/616x353/evil-west-pc-juego-steam-cover.jpg?v=1669313415",
+        "title": "Evil West",
+        "price": "20.5 €"
+      },
+      {
+        "id": 14,
+        "img": "https://s2.gaming-cdn.com/images/products/13390/616x353/street-fighter-6-deluxe-edition-deluxe-edition-pc-juego-steam-cover.jpg?v=1673626264",
+        "title": "Street Fighter",
+        "price": "90.5 €"
+      },
+      {
+        "id": 15,
+        "img": "https://s2.gaming-cdn.com/images/products/13309/616x353/blood-bowl-3-brutal-edition-brutal-edition-pc-juego-steam-cover.jpg?v=1677150199",
+        "title": "Blood Bowl",
+        "price": "20.5 €"
+      },
+      {
+        "id": 16,
+        "img": "https://s2.gaming-cdn.com/images/products/13387/616x353/star-wars-jedi-survivor-xbox-series-x-s-xbox-series-x-s-juego-microsoft-store-europe-cover.jpg?v=1675240638",
+        "title": "Start Wars Jedi Survivor",
+        "price": "1.5 €"
+      }
+    ],
+    "tendencias": [
+      {
+        "id": 0,
+        "image_url": "https://s3.gaming-cdn.com/images/products/13535/616x353/los-sims-4-creciendo-en-familia-pc-mac-juego-origin-cover.jpg?v=1678980439"
+      },
+      {
+        "id": 1,
+        "image_url": "https://s2.gaming-cdn.com/images/products/7072/616x353/hogwarts-legacy-pc-juego-steam-europe-cover.jpg?v=1676112832"
+      },
+      {
+        "id": 2,
+        "image_url": "https://s1.gaming-cdn.com/images/products/12702/616x353/destiny-2-eclipse-pc-juego-steam-cover.jpg?v=1677704495"
+      },
+      {
+        "id": 3,
+        "image_url": "https://s3.gaming-cdn.com/images/products/13625/616x353/stellaris-first-contact-story-pack-pc-mac-juego-steam-cover.jpg?v=1678781943"
+      },
+      {
+        "id": 4,
+        "image_url": "https://s3.gaming-cdn.com/images/products/13625/616x353/stellaris-first-contact-story-pack-pc-mac-juego-steam-cover.jpg?v=1678781943"
+      },
+      {
+        "id": 5,
+        "image_url": "https://s1.gaming-cdn.com/images/products/9237/616x353/company-of-heroes-3-pc-juego-steam-europe-cover.jpg?v=1677149212"
+      },
+      {
+        "id": 6,
+        "image_url": "https://s2.gaming-cdn.com/images/products/13423/616x353/wwe-2k23-pc-juego-steam-europe-cover.jpg?v=1679050429"
+      },
+      {
+        "id": 7,
+        "image_url": "https://s3.gaming-cdn.com/images/products/4793/616x353/barotrauma-pc-mac-juego-steam-cover.jpg?v=1677665893"
+      },
+      {
+        "id": 8,
+        "image_url": "https://s1.gaming-cdn.com/images/products/13647/616x353/pokemon-purpura-el-tesoro-oculto-del-area-cero-switch-switch-juego-nintendo-eshop-europe-cover.jpg?v=1677663519"
+      }
+    ],
+    "juegos": [
+      {
+        "id": 1,
+        "img": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_ARKSurvivalEvolved.jpg",
+        "title": "Ark: Survival Envolved",
+        "price": "20.5 €"
+      },
+      {
+        "id": 2,
+        "img": "https://i.ytimg.com/vi/LTqczRnNqDc/maxresdefault.jpg",
+        "title": "Marvels Spider-Man",
+        "price": "20.5 €"
+      },
+      {
+        "id": 3,
+        "img": "https://s2.gaming-cdn.com/images/products/13273/616x353/jurassic-world-evolution-2-dominion-malta-expansion-pc-juego-steam-cover.jpg?v=1670516832",
+        "title": "Jurrassic world evolution 2",
+        "price": "20.5 €"
+      }
+    ],
+    "topventas": [
+      {
+        "id": 0,
+        "image_url": "https://s1.gaming-cdn.com/images/products/4824/616x353/elden-ring-pc-juego-steam-europe-cover.jpg?v=1650985585"
+      },
+      {
+        "id": 1,
+        "image_url": "https://s3.gaming-cdn.com/images/products/9506/616x353/potion-craft-alchemist-simulator-pc-juego-steam-cover.jpg?v=1652957475"
+      },
+      {
+        "id": 2,
+        "image_url": "https://s3.gaming-cdn.com/images/products/761/616x353/mount-y-blade-ii-bannerlord-pc-juego-steam-cover.jpg?v=1675069693"
+      },
+      {
+        "id": 3,
+        "image_url": "https://s1.gaming-cdn.com/images/products/7353/616x353/hello-neighbor-2-pc-juego-steam-europe-cover.jpg?v=1670335959"
+      },
+      {
+        "id": 4,
+        "image_url": "https://s2.gaming-cdn.com/images/products/6205/616x353/super-smash-bros-ultimate-fighters-pass-vol-2-switch-switch-juego-nintendo-eshop-europe-cover.jpg?v=1675413345"
+      },
+      {
+        "id": 5,
+        "image_url": "https://s1.gaming-cdn.com/images/products/3321/616x353/super-smash-bros-ultimate-fighters-pass-switch-switch-juego-nintendo-eshop-europe-cover.jpg?v=1675413308"
+      },
+      {
+        "id": 6,
+        "image_url": "https://s1.gaming-cdn.com/images/products/5862/616x353/stranglehold-pc-juego-gog-com-cover.jpg?v=1653554747"
+      },
+      {
+        "id": 7,
+        "image_url": "https://s2.gaming-cdn.com/images/products/9463/616x353/brawlhalla-pc-mac-juego-steam-cover.jpg?v=1636714256"
+      },
+      {
+        "id": 8,
+        "image_url": "https://s3.gaming-cdn.com/images/products/6818/616x353/ea-sports-ufc-3-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-juego-microsoft-store-cover.jpg?v=1651663290"
+      }
+    ],
+    "slider": [
+      {
+        "id": 1,
+        "image_url": "https://s1.gaming-cdn.com/img/products/10545/pcover/10545.jpg?v=1665157647"
+      },
+      {
+        "id": 2,
+        "image_url": "https://s3.gaming-cdn.com/img/products/12863/pcover/12863.jpg?v=1664291457"
+      },
+      {
+        "id": 3,
+        "image_url": "https://s1.gaming-cdn.com/img/products/7590/pcover/7590.jpg?v=1651746963"
+      }
+    ],
+    "comprado": [
+      {
+        "id": 1,
+        "image_url": "https://s1.gaming-cdn.com/img/products/10545/pcover/10545.jpg?v=1665157647"
+      }
+    ]
+  }

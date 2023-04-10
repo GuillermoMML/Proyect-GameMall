@@ -1,0 +1,39 @@
+/* GENERAL STYLE*/
+.center-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-buttons {
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.loginBtn {
+    padding: 1.2em;
+    background-color: #FE6F27;
+    border-radius: 10px;
+    width: 10em;
+    margin-right: 1.2em;
+    flex-grow: 1;
+}
+
+.registerBtn {
+    padding: 1.2em;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    width: 10em;
+    flex-grow: 1;
+}
+
+
+input[type=text], input[type=password], input[type=email] {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+    border-radius: 10px;
+}
