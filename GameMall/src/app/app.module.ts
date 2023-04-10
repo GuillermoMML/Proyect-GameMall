@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { BuscadoComponent } from './pages/buscado/buscado.component';
+import { CabeceraLoginComponent } from './pages/cabecera-login/cabecera-login.component';
+import { CabeceraNologinComponent } from './pages/cabecera-nologin/cabecera-nologin.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { RegisterComponent } from './pages/register/register.component';
     PrincipalComponent,
     LoginComponent,
     RegisterComponent,
+    BuscadoComponent,
+    CabeceraLoginComponent,
+    CabeceraNologinComponent,
   ],
   imports: [
     BrowserModule,
