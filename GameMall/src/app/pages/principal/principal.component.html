@@ -7,17 +7,41 @@
   <div class="tendencias">
     <h1>Tendencias</h1>
     <hr class="orangeLine">
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
+    <div class="row">
+      <div class="column" *ngFor="let tendencia of tendencias.slice(0, 3)">
+        <img src="{{tendencia.image_url}}" alt="Tendencia {{tendencia.id}}" class="img-resize">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" *ngFor="let tendencia of tendencias.slice(3, 6)">
+        <img src="{{tendencia.image_url}}" alt="Tendencia {{tendencia.id}}" class="img-resize">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" *ngFor="let tendencia of tendencias.slice(6, 9)">
+        <img src="{{tendencia.image_url}}" alt="Tendencia {{tendencia.id}}" class="img-resize">
+      </div>
+    </div>
   </div>
   <div class="topsales">
     <h1>Top Ventas</h1>
     <hr class="orangeLine">
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
-  </div>
+    <div class="row">
+      <div class="column" *ngFor="let venta of topVentas.slice(0, 3)">
+        <img src="{{venta.image_url}}" alt="Venta {{venta.id}}" class="img-resize">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" *ngFor="let venta of topVentas.slice(3, 6)">
+        <img src="{{venta.image_url}}" alt="Venta {{venta.id}}" class="img-resize">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" *ngFor="let venta of topVentas.slice(6, 9)">
+        <img src="{{venta.image_url}}" alt="Venta {{venta.id}}" class="img-resize">
+      </div>
+    </div>
+  </div>  
   <footer>
     <img src="img/vector1.png"> 
     <div class="footerText">

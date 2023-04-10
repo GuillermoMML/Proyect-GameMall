@@ -5,7 +5,7 @@ export function reloadSlider() {
 
     let currentSlideIndex = 0;
     console.log("It's working!");
-    fetch("./json/datos.json")
+    fetch("src/assets/json/datos.json")
         .then((response) => response.json())
         .then((data) => {
             data.slider.forEach((slide) => {
