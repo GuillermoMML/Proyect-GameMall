@@ -1,9 +1,10 @@
 <div class="slider">
-    <div class="slider-wrapper">
+  <div class="slider-wrapper">
+    <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === activeSlideIndex}">
+      <img [src]="images[activeSlideIndex].image_url" [alt]="image.id">
     </div>
-    <button class="prev">Previous</button>
-    <button class="next">Next</button>
   </div>
+</div>
   <div class="tendencias">
     <h1>Tendencias</h1>
     <hr class="orangeLine">
