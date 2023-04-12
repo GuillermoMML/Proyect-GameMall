@@ -32,7 +32,7 @@
 
 input[type=text], input[type=password], input[type=email] {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     padding: 1.2em;
     border: 2px solid rgb(89, 88, 88);
     border-radius: 10px;
