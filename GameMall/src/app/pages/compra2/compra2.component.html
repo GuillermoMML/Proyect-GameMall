@@ -1,1 +1,63 @@
-<p>compra2 works!</p>
+<div id="cabecera">
+    <div class="circulo">1</div>
+    <div class="flecha"></div>
+    <div class="circulo">2</div>
+    <div class="flecha"></div>
+    <div class="circulo">3</div>
+</div>
+
+<h3 style="margin-left: 2%;">Dirección de facturación</h3>
+
+<div id="container">
+    <form action="" id="formulario-domicilio">
+        <input type="" placeholder="Nombre completo"  class="datos">
+        <input type="text" placeholder="DNI/CIF/NIF"  class="datos">
+        <input type="tel" placeholder="Dirección"  class="datos">
+        <input type="text" placeholder="Teléfono móvil"  class="datos">
+        <select name="combo"  class="datos" id="pais" area-placeholder="País">
+            <option >España</option>
+            <option >Francia</option>
+            <option >Alemania</option>
+            <option >Inglaterra</option>
+            <option >Italia</option>
+        </select>     
+    </form>
+
+    <div id="bloque-pagar">
+        
+            <section class="resumen-pago">
+                <span>Total</span>
+            </section>
+         
+            <button type="submit" id="boton-pago">Pagar</button>
+            <section id="despues-pagar">
+                <div class="linea"></div>
+                <div id="letra">o</div>
+                <div class="linea"></div>
+            </section> 
+            <div style="text-align: center">Seguir comprando</div>
+          
+    </div>
+
+    <form id="metodo-pago">
+        <h3 style="grid-column: 1/3;">Método de pago</h3>
+    
+        
+        <label for="" class="etiqueta">Número de tarjeta</label>
+        <input type="text" class="datos" placeholder="1234 55678 9012 3456">
+        
+        
+        <label for="" class="etiqueta">Fecha expiración</label>
+        <input type="text" class="datos" placeholder="MM/AA">
+        
+        <label for="" class="etiqueta">CVC/CVV</label>
+        <input type="text" class="datos" placeholder="3 dígitos">
+        
+        <label for="" class="etiqueta" >Nombre en la tarjeta</label>
+        <input type="text" class="datos" placeholder="Antonio Miranda">
+        
+        
+    </form>
+    <div id="promocion">Promocion</div>
+</div>
+
