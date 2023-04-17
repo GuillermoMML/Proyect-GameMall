@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 import datos from '../../../assets/json/datos.json';
 
 interface Data {
@@ -22,7 +22,6 @@ export class Compra1Component {
   }
 
   clickCompra2(){
-    this.router.navigate(['/compra2']);
-    
+    this.router.navigate(['/compra2']); 
   }
 }
