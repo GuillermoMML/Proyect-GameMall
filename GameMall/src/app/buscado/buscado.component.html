@@ -1,0 +1,19 @@
+<section id="containerbuscado">
+  <div *ngFor="let item of buscado">
+    <div>
+      <img (click)="onButtonClickSeleccionado(item)" [src]="item.img" alt="Buscado {{item.id}}" class="my-custom-img">
+    </div>
+      <h2>{{ item.title }}</h2>
+      <label>{{ item.price }}</label>
+  </div>
+</section>
+<div id="navegacion">
+  <div id="prev">
+    <a href="#" class="navegaciona">ANTERIOR</a>
+  </div>
+  <div id="next">
+    <a href="#" class="navegaciona">SIGUIENTE</a>
+  </div>
+</div>
+
+
