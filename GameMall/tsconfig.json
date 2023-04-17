@@ -18,11 +18,7 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-<<<<<<< HEAD
     "resolveJsonModule": true,
-=======
-    "resolveJsonModule": true, 
->>>>>>> 4554ca392e118cbf3e1fdee47635d9f6ba39b81f
     "allowSyntheticDefaultImports": true,
     "useDefineForClassFields": false,
     "lib": [

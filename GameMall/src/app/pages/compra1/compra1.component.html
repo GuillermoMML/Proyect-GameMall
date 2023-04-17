@@ -37,7 +37,8 @@
             <span>Subtotal</span>
             <span>35.49 EUR</span>
         </section>
-        <button type="submit" id="boton-pago">Pagar</button>
+        <button type="submit" id="boton-pago" (click)="clickCompra2()">Pagarrr</button>
+        <a href="" (click)="clickCompra2()">NAVEGAR</a>
         <section id="despues-pagar">
             <div class="linea"></div>
             <div id="letra">o</div>
@@ -47,5 +48,10 @@
     </div>
 </div>
 
-<section id="sugerencias">
-    <!--Contenido del script-->
+<div id="sugerencias">
+    <div class="recomendado" *ngFor="let recomendado of recomendados">
+      <img class="recomendado-img" [src]="recomendado.img" />
+      <label class="title" for="Title">{{ recomendado.title }}</label>
+      <label class="price">{{ recomendado.price }}</label>
+    </div>
+  </div>  
