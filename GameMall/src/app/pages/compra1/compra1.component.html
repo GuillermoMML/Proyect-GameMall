@@ -1,3 +1,4 @@
+
 <div id="cabecera">
     <div class="circulo">1</div>
     <div class="flecha"></div>
@@ -5,7 +6,6 @@
     <div class="flecha"></div>
     <div class="circulo">3</div>
 </div>
-
 <div id="producto">
     <div class="texto" id="texto1">Cesta</div>
     <div class="texto" id="texto2">Resumen</div>
@@ -47,10 +47,10 @@
     </div>
 </div>
 
-<div id="sugerencias">
+ <div id="sugerencias">
     <div class="recomendado" *ngFor="let recomendado of recomendados">
-      <img class="recomendado-img" [src]="recomendado.img" />
-      <label class="title" for="Title">{{ recomendado.title }}</label>
-      <label class="price">{{ recomendado.price }}</label>
+        <img class="recomendado-img" [src]="recomendado.img" />
+        <label class="title" for="Title">{{ recomendado.title }}</label>
+        <label class="price">{{ recomendado.price }}</label>
     </div>
-  </div>  
+</div>

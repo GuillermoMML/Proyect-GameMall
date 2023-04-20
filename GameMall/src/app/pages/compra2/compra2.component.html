@@ -1,3 +1,4 @@
+
 <div id="cabecera">
     <div class="circulo">1</div>
     <div class="flecha"></div>
@@ -6,14 +7,29 @@
     <div class="circulo">3</div>
 </div>
 
-<h3 style="margin-left: 2%;">Dirección de facturación</h3>
+<h3 style="margin-left: 2%; margin-top: 2%;">Dirección de facturación</h3>
 
 <div id="container">
-    <form action="" id="formulario-domicilio">
-        <input type="" placeholder="Nombre completo"  class="datos">
-        <input type="text" placeholder="DNI/CIF/NIF"  class="datos">
-        <input type="tel" placeholder="Dirección"  class="datos">
-        <input type="text" placeholder="Teléfono móvil"  class="datos">
+    <form action="" id="formulario-domicilio" [formGroup]="miFormulario">
+        <div>
+            <input type="" placeholder="Nombre completo" [ngClass]="{'datos': !nameNoValido, 'datos-mal': nameNoValido}" formControlName="name">
+            <small *ngIf="nameNoValido">Esto es una prueba</small>
+        </div>
+       
+        <div>
+            <input type="text" placeholder="DNI/CIF/NIF" [ngClass]="{'datos': !dniNoValido, 'datos-mal': dniNoValido}" formControlName="dni" (blur)="miFormulario.get('dni')?.markAsTouched()">
+            <small *ngIf="dniNoValido">El dni/nif/cif no es valido</small>
+
+        </div>
+        <div>
+            <input type="tel" placeholder="Dirección"  class="datos">
+            <small *ngIf="nameNoValido">Esto es una prueba</small>
+        </div>
+        <div>
+            <input type="text" placeholder="Teléfono móvil"  class="datos">
+            <small *ngIf="nameNoValido">Esto es una prueba</small>
+        </div>
+        
         <select name="combo"  class="datos" id="pais" area-placeholder="País">
             <option >España</option>
             <option >Francia</option>
@@ -21,6 +37,11 @@
             <option >Inglaterra</option>
             <option >Italia</option>
         </select>     
+
+        <div>
+            <input type="text" placeholder="Correo electronico"  class="datos">
+            <small *ngIf="nameNoValido">Esto es una prueba</small>
+        </div>
     </form>
 
     <div id="bloque-pagar">

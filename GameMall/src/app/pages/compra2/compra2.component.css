@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 4%;
 }
 .circulo {
     display: flex;
@@ -37,6 +38,9 @@
     display: grid;
     grid-template-columns: 60% 35%;
     gap: 5%;
+}
+#formulario-domicilio input{
+    width: 100%;
 }
 #bloque-pagar{
     width: 80%;
@@ -81,10 +85,24 @@
     border-radius: 10px;
     color: white;
     border: 2px solid rgb(89, 88, 88); 
-    
 }
-
+.datos-mal{
+    background-color: #262525 !important; 
+    padding: 10px !important;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgb(236, 4, 4); 
+}
+#pais{
+   height: 80%;
+}
+small{
+    display: block;
+    color: rgb(185, 45, 45);
+    font-size: large;
+}
 #metodo-pago{
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 30% 60%;
     gap: 5%;
@@ -109,7 +127,7 @@
     }
     #metodo-pago{
         display: flex;
-        margin-top: 7%;
+        margin-top: 11%;
         flex-direction: column;
         column-gap: 5%;
     }
@@ -135,5 +153,6 @@
     #pais{
         width: 30%;
         padding: 70%;
+        height: 100%;
     }
 }   
