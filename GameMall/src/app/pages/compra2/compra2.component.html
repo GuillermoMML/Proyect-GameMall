@@ -7,13 +7,18 @@
     <div class="circulo">3</div>
 </div>
 
+<div>
+    jfapjfpoa
+    <i class="fa-solid fa-house"></i>
+</div>
+
 <h3 style="margin-left: 2%; margin-top: 2%;">Dirección de facturación</h3>
 
 <div id="container">
     <form action="" id="formulario-domicilio" [formGroup]="miFormulario">
         <div>
             <input type="" placeholder="Nombre completo" [ngClass]="{'datos': !nameNoValido, 'datos-mal': nameNoValido}" formControlName="name">
-            <small *ngIf="nameNoValido">Esto es una prueba</small>
+            <small *ngIf="nameNoValido">Necesita poner un nombre</small>
         </div>
        
         <div>
@@ -22,25 +27,30 @@
 
         </div>
         <div>
-            <input type="tel" placeholder="Dirección"  class="datos">
-            <small *ngIf="nameNoValido">Esto es una prueba</small>
+            <input type="text" placeholder="Dirección" [ngClass]="{'datos': !addresNoValido, 'datos-mal': addresNoValido}" formControlName="addres">
+            <small *ngIf="addresNoValido">Necesita poner una direccion</small>
         </div>
         <div>
-            <input type="text" placeholder="Teléfono móvil"  class="datos">
-            <small *ngIf="nameNoValido">Esto es una prueba</small>
+            <input type="text" placeholder="Teléfono móvil" [ngClass]="{'datos': !phoneNoValido, 'datos-mal': phoneNoValido}" formControlName="phone" maxlength="9">
+            <small *ngIf="phoneNoValido">Numero de telefono invalido</small>
         </div>
         
-        <select name="combo"  class="datos" id="pais" area-placeholder="País">
-            <option >España</option>
-            <option >Francia</option>
-            <option >Alemania</option>
-            <option >Inglaterra</option>
-            <option >Italia</option>
-        </select>     
+        <div>
+            <select name="combo" [ngClass]="{'datos': !countryNoValido, 'datos-mal': countryNoValido}" id="pais" formControlName="country">
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option >España</option>
+                <option >Francia</option>
+                <option >Alemania</option>
+                <option >Inglaterra</option>
+                <option >Italia</option>
+            </select> 
+            <small *ngIf="countryNoValido">Debe seleccionar un pais</small>
+        </div>
+            
 
         <div>
-            <input type="text" placeholder="Correo electronico"  class="datos">
-            <small *ngIf="nameNoValido">Esto es una prueba</small>
+            <input type="text" placeholder="Correo electronico" [ngClass]="{'datos': !emailNoValido, 'datos-mal': emailNoValido}" formControlName="email">
+            <small *ngIf="emailNoValido">No es un email valido</small>
         </div>
     </form>
 
@@ -50,7 +60,7 @@
                 <span>Total</span>
             </section>
          
-            <button type="submit" id="boton-pago">Pagar</button>
+            <button type="submit" id="boton-pago" (click)="guardarDatos()" [disabled]="miFormulario.invalid">Pagar</button>
             <section id="despues-pagar">
                 <div class="linea"></div>
                 <div id="letra">o</div>

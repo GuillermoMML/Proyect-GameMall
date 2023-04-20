@@ -18,12 +18,12 @@ export class Compra2Component {
 
   crearFormulario(){
     this.miFormulario = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(5)]],
-      dni: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
+      name: ['', [Validators.required]],
+      dni: ['', [Validators.required, Validators.minLength(9)]],
+      country: ['', [Validators.required]],
       addres: ['', [Validators.required, Validators.minLength(5)]],
+      phone: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
       email: ['', [Validators.required, Validators.email]],
-      telefono: ['', Validators.pattern(/^\d{10}$/)],
-      password: ['', Validators.required],
     })
   }
 
@@ -33,9 +33,30 @@ export class Compra2Component {
 
   /*Arreglar que se cumpla el patron*/ 
   get dniNoValido(){
-    return this.miFormulario.get('dni')?.invalid && this.miFormulario.get('dni')?.touched || this.miFormulario.get('dni')?.errors?.['pattern'];
+    return this.miFormulario.get('dni')?.invalid && this.miFormulario.get('dni')?.touched;
   }
+
+  get countryNoValido(){
+    return this.miFormulario.get('country')?.invalid && this.miFormulario.get('country')?.touched ;
+  }
+
+  get addresNoValido(){
+    return this.miFormulario.get('addres')?.invalid && this.miFormulario.get('addres')?.touched;
+  }
+
+  get phoneNoValido(){
+    return this.miFormulario.get('phone')?.invalid && (this.miFormulario.get('phone')?.touched || this.miFormulario.get('phone')?.errors?.['pattern']);
+  }
+
+  get emailNoValido(){
+    return this.miFormulario.get('email')?.invalid && (this.miFormulario.get('email')?.touched || this.miFormulario.get('email')?.errors?.['email']);
+  }
+
   clickSeguirComprando(){
     this.router.navigate(['/']);
+  }
+
+  guardarDatos(){
+    console.log(this.miFormulario)
   }
 }
