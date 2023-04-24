@@ -10,6 +10,9 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 export class Compra2Component {
 
   miFormulario!: FormGroup;
+  dniPattern = /^\d{8}[A-HJ-NP-TV-Z]$/i;
+  phonePattern = /^(6|7|8|9)\d{8}$/;
+  emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.?[a-zA-Z]{2,4}$/;
 
   constructor(private router: Router, private fb:FormBuilder) { 
    this.crearFormulario();
@@ -22,7 +25,7 @@ export class Compra2Component {
       dni: ['', [Validators.required, Validators.minLength(9)]],
       country: ['', [Validators.required]],
       addres: ['', [Validators.required, Validators.minLength(5)]],
-      phone: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
+      phone: ['', [Validators.required, Validators.pattern('/^(6|7|8|9)\d{8}$/')]],
       email: ['', [Validators.required, Validators.email]],
     })
   }
@@ -33,7 +36,7 @@ export class Compra2Component {
 
   /*Arreglar que se cumpla el patron*/ 
   get dniNoValido(){
-    return this.miFormulario.get('dni')?.invalid && this.miFormulario.get('dni')?.touched;
+    return this.miFormulario.get('dni')?.invalid && this.miFormulario.get('dni')?.touched && !this.dniPattern.test(this.miFormulario.get('dni')?.value);
   }
 
   get countryNoValido(){
@@ -45,11 +48,11 @@ export class Compra2Component {
   }
 
   get phoneNoValido(){
-    return this.miFormulario.get('phone')?.invalid && (this.miFormulario.get('phone')?.touched || this.miFormulario.get('phone')?.errors?.['pattern']);
+    return this.miFormulario.get('phone')?.invalid && this.miFormulario.get('phone')?.touched && !this.phonePattern.test(this.miFormulario.get('phone')?.value);
   }
 
   get emailNoValido(){
-    return this.miFormulario.get('email')?.invalid && (this.miFormulario.get('email')?.touched || this.miFormulario.get('email')?.errors?.['email']);
+    return this.miFormulario.get('email')?.invalid && this.miFormulario.get('email')?.touched && !this.emailPattern.test(this.miFormulario.get('email')?.value);
   }
 
   clickSeguirComprando(){
@@ -57,6 +60,6 @@ export class Compra2Component {
   }
 
   guardarDatos(){
-    console.log(this.miFormulario)
+    console.log(this.miFormulario);
   }
 }
