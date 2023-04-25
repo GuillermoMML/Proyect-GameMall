@@ -14,7 +14,6 @@ export class SeleccionadoComponent {
   ngOnInit() {
     // Obtener el objeto item de la URL
     this.item = JSON.parse(this.route.snapshot.queryParams['item']);
-    console.log('El item seleccionado es:', this.item);
     // Utilizar el objeto item para renderizar la imagen
     // ...
   }
