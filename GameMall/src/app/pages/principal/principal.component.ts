@@ -1,19 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Tendencia {
-  id: number;
-  image_url: string;
-}
-
-interface TopVentas {
-  id: number;
-  image_url: string;
-}
-
-interface Image {
-  id: number;
-  image_url: string;
-}
+import { DataService } from 'src/app/services/data.service';
+import { Tendencias, Slider, TopVentas } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-principal',
@@ -22,54 +9,48 @@ interface Image {
 })
 export class PrincipalComponent implements OnInit {
 
-  tendencias: Tendencia[] = [];
+  tendencias: Tendencias[] = [];
   topVentas: TopVentas[] = [];
-  images: Image[] = [];
+  sliderImages: Slider[] = [];
   activeSlideIndex = 0;
   loadedImages = 0;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.fetchData();
-  }
-
-  fetchData() {
-    fetch('/assets/json/datos.json')
-    .then(response => response.json())
-    .then(data => {
-      this.tendencias = data.tendencias;
-      this.topVentas = data.topventas;
-      this.images = data.slider;
-      this.startSlideTimer();
+    this.dataService.getSlider().subscribe(sliderImg => {
+      this.sliderImages = sliderImg;
+      console.log(sliderImg)
     })
-    .catch(error => {
-      console.error('Error loading JSON file:', error);
-    });
+    this.dataService.getTendencias().subscribe(tends => {
+      this.tendencias = tends;
+    })
+    this.dataService.getTopVentas().subscribe(topvents => {
+      this.topVentas = topvents;
+    })
+    this.startSlideTimer();
   }
 
   startSlideTimer() {
-    const imagesToLoad = this.images.length;
+    const imagesToLoad = this.sliderImages.length;
     let imagesLoaded = 0;
   
     // Preload all the images
-    this.images.forEach((image) => {
+    this.sliderImages.forEach((image) => {
       const img = new Image();
       img.onload = () => {
         imagesLoaded++;
         if (imagesLoaded === imagesToLoad) {
           // All images have been loaded, start the slide timer
             setInterval(() => {
-              if (this.images.length > 0) {
-                const nextSlideIndex = (this.activeSlideIndex + 1) % this.images.length;
+              if (this.sliderImages.length > 0) {
+                const nextSlideIndex = (this.activeSlideIndex + 1) % this.sliderImages.length;
                 this.activeSlideIndex = nextSlideIndex;
               }
             }, 5000); // Change slide every 5 seconds          
         }
       };
-      img.src = image.image_url;
+      img.src = image.img_url;
     });
   }
-  
-
 }

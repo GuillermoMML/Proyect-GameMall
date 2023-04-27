@@ -1,7 +1,7 @@
 <div class="slider">
   <div class="slider-wrapper">
-    <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === activeSlideIndex}">
-      <img [src]="images[activeSlideIndex].image_url" [alt]="image.id">
+    <div class="slide" *ngFor="let image of sliderImages; let i = index" [ngClass]="{'active': i === activeSlideIndex}">
+      <img [src]="sliderImages[activeSlideIndex].img_url" [alt]="image.id">
     </div>
   </div>
 </div>
