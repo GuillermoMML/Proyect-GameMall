@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collection, collectionData } from "@angular/fire/firestore";
-import { Slider, Tendencias, TopVentas } from '../interfaces/interfaces';
+import { Slider, Tendencias, TopVentas, Buscado } from '../interfaces/interfaces';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -23,5 +23,10 @@ export class DataService {
   getTopVentas(): Observable<TopVentas[]> {
     const topventasRef = collection(this.firestore, 'topventas')
     return collectionData(topventasRef, {idField: 'id'}) as Observable<TopVentas[]>;
+  }
+
+  getBuscados(): Observable<Buscado[]> {
+    const buscadoRef = collection(this.firestore, 'buscado')
+    return collectionData(buscadoRef, {idField: 'id'}) as Observable<Buscado[]>;
   }
 }

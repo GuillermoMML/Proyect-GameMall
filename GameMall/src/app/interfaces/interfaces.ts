@@ -12,3 +12,10 @@ export interface TopVentas {
     id: number;
     image_url: string;
 }
+
+export interface Buscado{
+    id: number;
+    img: string;
+    price: string;
+    title: string
+}
