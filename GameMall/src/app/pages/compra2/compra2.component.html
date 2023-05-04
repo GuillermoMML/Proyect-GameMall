@@ -14,6 +14,7 @@
     <form action="" id="formulario-domicilio" [formGroup]="miFormulario">
         <div>
             <input type="" placeholder="Nombre completo" [ngClass]="{'datos': !nameNoValido, 'datos-mal': nameNoValido}" formControlName="name">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
             <small *ngIf="nameNoValido">Necesita poner un nombre</small>
         </div>
        
