@@ -10,7 +10,7 @@ import { Compra2Component } from './pages/compra2/compra2.component';
 
 const routes: Routes = [
   { path: '', component: PrincipalComponent },
-  { path:'', component: BuscadoComponent },
+  { path:'navegacion', component: BuscadoComponent },
   { path:'seleccionado', component: SeleccionadoComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },

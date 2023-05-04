@@ -254,6 +254,7 @@ footer h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 4.7em;
 }
 
 .circulo {
@@ -483,6 +484,11 @@ h1 {
     width: 200px;
     height: 150px;
 }
+
+.img-resize:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
 .slider {
     position: relative;
     width: 100%;
@@ -661,10 +667,8 @@ textarea[type=text] {
     transform: translate(-50%, -50%);
 }
 
-
-@media (max-width: 600px) {
-
-
+/*Compra1 media query*/
+@media (max-width: 800px) {
     /*Resumen y pagar compra1*/
     #producto {
         display: grid;
@@ -719,7 +723,6 @@ textarea[type=text] {
     #sugerencias {
         display: flex;
         flex-direction: column;
-        /*flex-wrap: wrap;*/
         margin: 100px 15px 15px 15px;
     }
 

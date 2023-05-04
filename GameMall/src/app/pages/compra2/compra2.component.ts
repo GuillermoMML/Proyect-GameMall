@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-compra2',
   templateUrl: './compra2.component.html',
   styleUrls: ['./compra2.component.css']
 })
-export class Compra2Component {
+export class Compra2Component implements OnInit{
+  constructor(private dataService: DataService){}
 
   miFormulario!: FormGroup;
   dniPattern = /^\d{8}[A-HJ-NP-TV-Z]$/i;
@@ -16,9 +18,16 @@ export class Compra2Component {
 
   constructor(private router: Router, private fb:FormBuilder) { 
    this.crearFormulario();
-
   }
+  
+  ngOnInit(): void {
 
+    console.log('Me he ejecutado con exito xdd');
+    this.dataService.getBuscados().subscribe(x =>{
+      console.log(x);
+    })
+  }
+  
   crearFormulario(){
     this.miFormulario = this.fb.group({
       name: ['', [Validators.required]],
