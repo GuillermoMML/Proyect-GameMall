@@ -1,3 +1,4 @@
+
 <div id="cabecera">
     <div class="circulo">1</div>
     <div class="flecha"></div>
@@ -5,7 +6,6 @@
     <div class="flecha"></div>
     <div class="circulo">3</div>
 </div>
-
 <div id="producto">
     <div class="texto" id="texto1">Cesta</div>
     <div class="texto" id="texto2">Resumen</div>
@@ -37,15 +37,20 @@
             <span>Subtotal</span>
             <span>35.49 EUR</span>
         </section>
-        <button type="submit" id="boton-pago">Pagar</button>
+        <button id="boton-pago" (click)="clickCompra2()">Pagarrr</button>
         <section id="despues-pagar">
             <div class="linea"></div>
             <div id="letra">o</div>
             <div class="linea"></div>
         </section> 
-        <div style="text-align: center">Seguir comprando</div>
+        <div style="text-align: center; cursor: pointer;" routerLink='/'>Seguir comprando</div>
     </div>
 </div>
 
-<section id="sugerencias">
-    <!--Contenido del script-->
+ <div id="sugerencias">
+    <div class="recomendado" *ngFor="let recomendado of recomendados">
+        <img class="recomendado-img" [src]="recomendado.img" />
+        <label class="title" for="Title">{{ recomendado.title }}</label>
+        <label class="price">{{ recomendado.price }}</label>
+    </div>
+</div>
