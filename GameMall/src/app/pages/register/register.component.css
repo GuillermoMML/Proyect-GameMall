@@ -29,11 +29,35 @@
     flex-grow: 1;
 }
 
-
-input[type=text], input[type=password], input[type=email] {
+.datos {
     display: inline-block;
     width: 90%;
     padding: 1.2em;
     border: 2px solid rgb(89, 88, 88);
     border-radius: 10px;
+    background-color: #fdfdfd !important; 
+    color: rgb(0, 0, 0);
+   
 }
+.datos-mal{
+    display: inline-block;
+    width: 90%;
+    padding: 1.2em;
+    border: 2px solid rgb(241, 3, 3);
+    border-radius: 10px;
+    background-color: #fdfdfd !important; 
+    color: rgb(0, 0, 0);
+    
+}
+small{
+    display: block;
+    color: rgb(185, 45, 45);
+    font-size: large;
+}
+/* input[type=text], input[type=password], input[type=email] {
+    display: inline-block;
+    width: 90%;
+    padding: 1.2em;
+    border: 2px solid rgb(89, 88, 88);
+    border-radius: 10px;
+} */

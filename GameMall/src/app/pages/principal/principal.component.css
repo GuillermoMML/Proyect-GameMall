@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 /* GENERAL */
-body{
-    font-family: 'Concert One', cursive;
+.body{
     margin: 0;
-    padding: 0;
-    background-color: #2F2F2B;
-    color: white;
-    overflow-x: hidden;
+    margin-top: 3%;
 }
 
 h1 {
