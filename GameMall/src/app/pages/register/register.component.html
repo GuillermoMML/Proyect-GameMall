@@ -1,6 +1,6 @@
 <div class="modal-register center-modal">
     <h1>Registrarse</h1>
-    <form class="needs-validation" id="registration-form" [formGroup]="miFormulario">
+    <form class="needs-validation" id="registration-form" #registerForm="ngForm" [formGroup]="miFormulario">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label form-labels">Email address</label>
             <input type="email" [ngClass]="{'datos': !emailNoValido, 'datos-mal': emailNoValido}" placeholder="name@example.com" formControlName="email">

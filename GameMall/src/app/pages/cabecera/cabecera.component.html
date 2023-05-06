@@ -1,3 +1,4 @@
+
 <nav *ngIf="isLoggedIn">
     <div class="left-elements">
       <div class="toggle-btn">
@@ -18,7 +19,7 @@
     </div>
     <div class="right-elements">
       <a href="#"><span class="material-icons-outlined icon">person</span></a>
-      <span id="UserName">UserName</span>
+      <span id="UserName">{{userName}}</span>
     </div>
 </nav>
 

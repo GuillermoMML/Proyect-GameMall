@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, collectionData, query, where } from "@angular/fire/firestore";
-import { Slider, Tendencias, TopVentas, Buscado } from '../interfaces/interfaces';
+import { Firestore, collection, collectionData, query, where, DocumentReference, addDoc, getDocs } from "@angular/fire/firestore";
+import { Slider, Tendencias, TopVentas, Buscado, FormRegister } from '../interfaces/interfaces';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,6 +9,28 @@ import { Observable } from 'rxjs';
 export class DataService {
 
   constructor(private firestore: Firestore) {}
+
+  async getUsuarioByEmail(email: string): Promise<any | null> {
+    const usuariosRef = collection(this.firestore, 'usuarios');
+    const queryUsuarios = query(usuariosRef, where('email', '==', email));
+    const querySnapshot = await getDocs(queryUsuarios);
+  
+    if (querySnapshot.empty) {
+      return null; // no matching documents found
+    } else {
+      // extract the first matching document's data and return it
+      const docData = querySnapshot.docs[0].data();
+      
+      const usuario: any = {
+        id: querySnapshot.docs[0].id,
+        // map other fields here as necessary
+        email: docData['email'],
+        name: docData['userName'],
+        // ...
+      };
+      return usuario;
+    }
+  }
 
   getSlider(): Observable<Slider[]> {
     const sliderRef = collection(this.firestore, 'slider')
@@ -47,7 +69,9 @@ export class DataService {
     }
   }
   
-  
-  
+  saveFormData(formData: FormRegister): Promise<DocumentReference> {
+    const collectionRef = collection(this.firestore, 'usuarios');
+    return addDoc(collectionRef, formData);
+  }
   
 }

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
+import { Firestore } from '@angular/fire/firestore';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +15,7 @@ export class RegisterComponent {
   miFormulario!: FormGroup;
   emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.?[a-zA-Z]{2,4}$/;
 
-  constructor(private userService: UserService, private fb:FormBuilder, private router: Router){
+  constructor(private userService: UserService, private fb:FormBuilder, private router: Router, private firestore: Firestore, private dataService: DataService ){
     this.crearFormulario();
   }
 
@@ -43,6 +45,8 @@ export class RegisterComponent {
   }
 
   onSubmit(){
+    console.log(this.miFormulario.value)
+    this.dataService.saveFormData(this.miFormulario.value)
     this.userService.register(this.miFormulario.value)
     .then(response => {
       console.log(response);

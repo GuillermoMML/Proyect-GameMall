@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { user } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
@@ -10,6 +11,7 @@ import { UserService } from 'src/app/services/user.service';
 export class CabeceraComponent implements OnInit{
 
   isLoggedIn?: boolean;
+  userName?: string;
   
   constructor(private router: Router, private userService: UserService) { }
 
@@ -17,6 +19,9 @@ export class CabeceraComponent implements OnInit{
     this.userService.getLoggin().subscribe(valor => {
       this.isLoggedIn = valor;
     });
+    this.userService.getUsername().subscribe(username => {
+      this.userName = username;
+    });  
   }
 
 
