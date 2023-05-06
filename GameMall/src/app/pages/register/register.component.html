@@ -1,29 +1,33 @@
 <div class="modal-register center-modal">
     <h1>Registrarse</h1>
-    <form class="needs-validation" id="registration-form">
+    <form class="needs-validation" id="registration-form" [formGroup]="miFormulario">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label form-labels">Email address</label>
-            <input type="email" class="form-control" placeholder="name@example.com" id="registerEmail" required>
+            <input type="email" [ngClass]="{'datos': !emailNoValido, 'datos-mal': emailNoValido}" placeholder="name@example.com" formControlName="email">
+            <small *ngIf="emailNoValido">Debe poner un email valido</small>
         </div>
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label form-labels">Username</label>
-            <input type="text" class="form-control " id="registerName" placeholder="Pepe Fernandez" required>
-        </div>
+            <input [ngClass]="{'datos': !nameNoValido, 'datos-mal': nameNoValido}" type="text" placeholder="Pepe Fernandez" formControlName="userName">
+            <small *ngIf="nameNoValido">Necesita poner un nombre</small>
+        </div> 
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label form-labels">Password</label>
-            <input type="password" class="form-control" id="registerPassword" placeholder="Introduce Password" required>
+            <input type="password" [ngClass]="{'datos': !passwordNoValido, 'datos-mal': passwordNoValido}" placeholder="Introduce Password" formControlName="password">
+            <small *ngIf="passwordNoValido">Contraseña incorrecta</small>
         </div>
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label form-labels">Repeat password</label>
-            <input type="password" class="form-control" id="registerRepeatPassword" placeholder="Repeat Password" required>
+            <input type="password" [ngClass]="{'datos': !repeatePasswordNoValido, 'datos-mal': repeatePasswordNoValido}" placeholder="Repeat Password" formControlName="repitePassword">
+            <small *ngIf="repeatePasswordNoValido">No coincide las contraseñas</small>
         </div>
 
         <div class="login-buttons">
             <button class="loginBtn">Iniciar Sessión</button>
-            <button class="registerBtn" type="submit">Registrar</button>
+            <button class="registerBtn" type="submit" (click)="onSubmit()">Registrar</button>
         </div>
     </form>
 </div>

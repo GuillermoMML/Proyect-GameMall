@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CabeceraLoginComponent } from './cabecera-login.component';
+import { CabeceraComponent } from './cabecera.component';
 
-describe('CabeceraLoginComponent', () => {
-  let component: CabeceraLoginComponent;
-  let fixture: ComponentFixture<CabeceraLoginComponent>;
+describe('CabeceraComponent', () => {
+  let component: CabeceraComponent;
+  let fixture: ComponentFixture<CabeceraComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CabeceraLoginComponent ]
+      declarations: [ CabeceraComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CabeceraLoginComponent);
+    fixture = TestBed.createComponent(CabeceraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
