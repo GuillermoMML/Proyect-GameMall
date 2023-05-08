@@ -2,9 +2,11 @@
   <div *ngFor="let item of buscado">
     <div>
       <img (click)="onButtonClickSeleccionado(item)" [src]="item.img" alt="Buscado {{item.id}}" class="my-custom-img">
-    </div>
+    </div>  
+    <span style=display:flex;justify-content:space-between;>
       <h2>{{ item.title }}</h2>
-      <label>{{ item.price }}€</label>
+      <h2>{{ item.price }}</h2>
+    </span>
   </div>
 </section>
 <div id="navegacion">
