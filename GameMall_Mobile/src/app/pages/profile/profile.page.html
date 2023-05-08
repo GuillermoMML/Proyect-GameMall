@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +13,15 @@
       <ion-title size="large">Profile</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>My Profile</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Name: John Doe</p>
+      <p>Email: john.doe@example.com</p>
+      <p>Phone: 555-1234</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
