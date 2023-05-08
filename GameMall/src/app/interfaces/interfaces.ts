@@ -13,9 +13,16 @@ export interface TopVentas {
     image_url: string;
 }
 
-export interface Buscado{
+export interface Buscado {
     id: number;
     img: string;
     price: string;
     title: string
+}
+
+export interface FormRegister {
+    username: string,
+    email: string
+    password: string
+    uid: string
 }

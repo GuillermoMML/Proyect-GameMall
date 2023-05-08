@@ -9,14 +9,13 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./compra2.component.css']
 })
 export class Compra2Component implements OnInit{
-  constructor(private dataService: DataService){}
 
   miFormulario!: FormGroup;
   dniPattern = /^\d{8}[A-HJ-NP-TV-Z]$/i;
   phonePattern = /^(6|7|8|9)\d{8}$/;
   emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.?[a-zA-Z]{2,4}$/;
 
-  constructor(private router: Router, private fb:FormBuilder) { 
+  constructor(private router: Router, private fb:FormBuilder, private dataService: DataService) { 
    this.crearFormulario();
   }
   
