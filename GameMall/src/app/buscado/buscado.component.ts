@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
+import { Buscado } from 'src/app/interfaces/interfaces';
+
 import datos from '../../assets/datos.json';
 
 @Component({
@@ -9,24 +12,24 @@ import datos from '../../assets/datos.json';
 })
 
 export class BuscadoComponent implements OnInit {
-  public buscado: { id: number; img: string; title: string; price: string; }[] =datos.buscado;
   public nameFilter: string = '';
+  buscado: Buscado[] = [];
 
-  constructor (private router: Router, private activatedRoute: ActivatedRoute) {}
+  constructor (private router: Router, private activatedRoute: ActivatedRoute,private dataService: DataService) {}
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
-      const nameFilter = params['game'];
-        if (nameFilter) {
-        this.buscado = datos.buscado.filter(item => item.title.toLowerCase().includes(nameFilter.toLowerCase()));
-        this.nameFilter = nameFilter;
-      } else {
-        this.nameFilter = '';
-      }
+      const nameFilter = params['game'] || '';
+      this.nameFilter = nameFilter;
+  
+      this.dataService.getBuscados().subscribe(resultItem => {
+        const aux = resultItem;
+        this.buscado = aux.filter(item => item.title.toLowerCase().includes(nameFilter.toLowerCase()));
+      });
     });
-    console.log(this.buscado);
-
   }
+  
+  
 
   onButtonClickSeleccionado(item: any){
     this.router.navigate(['/seleccionado'], { queryParams: { item: JSON.stringify(item) } });

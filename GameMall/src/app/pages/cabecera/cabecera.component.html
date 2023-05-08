@@ -1,0 +1,47 @@
+
+<nav *ngIf="isLoggedIn">
+    <div class="left-elements">
+      <div class="toggle-btn">
+        <label for="inputCheck">&#9776; Todas las categorias</label>
+        <!--<input type="checkbox" id="inputCheck">-->
+      </div>
+      <form action="./" method="get">
+        <div class="searchbar">
+          <input type="text" class="searchbarinput" name="q" placeholder="Search">
+          <button type="submit" class="searchbarbutton">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="center-element">
+      <h1><a href="#"> GameMall</a></h1>
+    </div>
+    <div class="right-elements">
+      <a href="#"><span class="material-icons-outlined icon">person</span></a>
+      <span id="UserName">{{userName}}</span>
+    </div>
+</nav>
+
+<nav id="cabecera_nologin" *ngIf="!isLoggedIn">
+<div class="left-elements">
+    <div class="toggle-btn">
+    <label for="sideButton">&#9776; Todas las categorias</label>
+    </div>
+    <form (submit)="onSearchSubmit()" method="get">
+    <div class="searchbar">
+        <input type="text" class="searchbarinput" name="game" placeholder="Search" id="searchInput">
+        <button type="submit" class="searchbarbutton">
+        <i class="material-icons">search</i>
+        </button>
+    </div>
+    </form>
+</div>
+<div class="center-element">
+    <h1 class="MainNames"><a href="#"> GameMall</a></h1>
+</div>
+<div class="right-elements">
+    <button (click)="onButtonClickLogin()">Login</button>
+    <button (click)="onButtonClickRegister()">Registrarse</button>
+</div>
+</nav>
