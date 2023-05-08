@@ -1,0 +1,7 @@
+{
+  "name": "GameMall_Mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
