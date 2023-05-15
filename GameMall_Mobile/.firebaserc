@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gamemall-ca1e1": {
+      "hosting": {
+        "app": [
+          "gamemall-ca1e1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gamemall-ca1e1"
+  }
+}

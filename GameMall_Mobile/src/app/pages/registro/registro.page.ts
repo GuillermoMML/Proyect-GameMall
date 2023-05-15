@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Firestore } from "@angular/fire/firestore";
 
 @Component({
   selector: 'app-registro',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
+  constructor(private firestore: Firestore) {}
 
   ngOnInit() {
   }
