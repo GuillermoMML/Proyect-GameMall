@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Firestore } from "@angular/fire/firestore";
+import { Firestore, collection, collectionData, query, where, DocumentReference, addDoc, getDocs } from "@angular/fire/firestore";
+import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from '@angular/fire/auth';
 
 @Component({
   selector: 'app-registro',
@@ -9,9 +10,20 @@ import { Firestore } from "@angular/fire/firestore";
 })
 export class RegistroPage implements OnInit {
 
-  constructor(private firestore: Firestore) {}
+  nombre: string = '';
+  apellidos: string = '';
+  email: string = '';
+  password: string = '';
+  imagenPerfil: File | null = null;
 
-  ngOnInit() {
+  constructor(private auth: Auth, private fireStore: Firestore) { }
+
+  ngOnInit(): void {
+    
+  }
+
+  register(email: string, password: string) {
+    return createUserWithEmailAndPassword(this.auth, email, password);
   }
 
 }
