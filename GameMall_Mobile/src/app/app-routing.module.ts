@@ -28,10 +28,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/master/master.module').then( m => m.MasterPageModule)
   },
   {
-    path: 'favourite',
-    loadChildren: () => import('./pages/favourite/favourite.module').then( m => m.FavouritePageModule)
-  },
-  {
     path: 'detail',
     loadChildren: () => import('./pages/detail/detail.module').then( m => m.DetailPageModule)
   },
