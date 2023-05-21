@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Profile</ion-title>
@@ -18,32 +18,35 @@
       <ion-card-title>My Profile</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>Name: John Doe</p>
-      <p>Email: john.doe@example.com</p>
-      <p>Phone: 555-1234</p>
+      <p>Nombre: {{name}}</p>
+      <p>Email: {{email}}</p>
     </ion-card-content>
     
-  </ion-card>
+</ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Editar Perfil</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
-    
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono"><br>
-    
-        <input type="submit" value="Guardar cambios">
-      </form>
-    </ion-card-content>
-    
-  </ion-card>
+<ion-content>
+
+      <ion-title size="large">Editar Perfil</ion-title>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">email</ion-label>
+      <ion-input [(ngModel)]="email" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+
+      
+  </ion-list>
+
+  <ion-button expand="block" (click)="updateProfile()">Guardar cambios</ion-button>
 </ion-content>
 
