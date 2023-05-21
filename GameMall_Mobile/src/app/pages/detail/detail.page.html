@@ -7,10 +7,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Detalle</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-img [src]="elemento.img"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ elemento.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Display other details of the elemento object -->
+      <p>Category: {{ elemento.id }}</p>
+      <p>Description: {{ elemento.price }}</p>
+      <ion-toggle [(ngModel)]="elemento.favoritoStatus" (ionChange)="toggleFavorito()"></ion-toggle>
+      <!-- Add more properties as needed -->
+    </ion-card-content>
+  </ion-card>
 </ion-content>
