@@ -10,22 +10,21 @@ import { UserService } from '../../services/auth.service';
 export class ProfilePage {
   email: string = '';
   password: string = '';
-  name: string = '';
 
   constructor(private afAuth: UserService) {}
 
   ionViewWillEnter() {
     const user = this.afAuth.getCurrentUser();
+    console.log(user)
     if (user) {
       this.email = user.email || '';
-      this.name = user.displayName || '';
     }
   }
 
   updateProfile() {
     const user = this.afAuth.getCurrentUser();
     if (user) {
-      this.afAuth.updateProfile(this.email, this.name, this.password)
+      this.afAuth.updateProfile(this.email, this.password)
     }
   }
 }

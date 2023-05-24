@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from '@angular/fire/auth';
+import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateEmail,updatePassword} from '@angular/fire/auth';
 import { getAuth, updateProfile } from "firebase/auth"; 
 import { BehaviorSubject } from 'rxjs';
 import { Firestore, collection, where, query, CollectionReference, getDocs } from '@angular/fire/firestore';
-import { updateEmail, updatePassword} from 'firebase/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -52,26 +51,55 @@ export class UserService {
   getCurrentUser(){
     return this.auth.currentUser;
   }
-  
-  async updateProfile(name: string, password: string, email: string) {
-    const user = this.auth.currentUser;
-    console.log(user)
-    if (user) {
-      try {
-        await updateEmail(user, email);
-        await updatePassword(user, password);
-        await updateProfile(user, {
-          displayName: name
-        });
-        console.log('Perfil actualizado correctamente');
-        console.log(user);
-      } catch (error) {
-        console.log('Error al actualizar el perfil:', error);
+
+  async deleteUser() {
+    try {
+      const user = this.auth.currentUser;
+
+      if (user) {
+        await user.delete();
+        console.log('Usuario eliminado correctamente');
+      } else {
+        console.error('No se encontró ningún usuario autenticado');
       }
-    } else {
-      console.log('No hay usuario autenticado');
+    } catch (error) {
+      console.error('Error al eliminar el usuario:', error);
     }
   }
+
+  newEmail(newEmail: string): Promise<void | null> {
+    const user = this.auth.currentUser;   
+    if (user) {
+      updateEmail(user,newEmail);
+
+    }
+    return Promise.resolve(null);
+  }
+
+  newPassword(newPassword: string): Promise<void | null> {
+    const user = this.auth.currentUser;   
+    if (user) {
+      updatePassword(user,newPassword);
+    }
+    return Promise.resolve(null);
+  }
+
+  async updateProfile(email: string, password: string) {
+    try {
+      let user = this.auth.currentUser;
+      if(user){
+        updateEmail(user,email);
+      }
+      if(user){
+        updatePassword(user,password);
+      }
+      console.log("Se actualizo")
+
+    } catch (error) {
+      console.error('Error al actualizar el correo y la contraseña:', error);
+    }
+  }
+  
   
   
 
